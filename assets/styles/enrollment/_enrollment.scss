@@ -41,9 +41,29 @@
         }
 }
 
-.aplicationManagement{
-    width: 90%;
-    margin: 15px auto;
+@mixin progressBar($width) {
+    content: "";
+    position: absolute;
+    width: $width;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $primaryColor;
+    border-radius: 75px;
+}
+
+@mixin progressBarHp($height){
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: $height;
+    top: 0;
+    left: 0;
+    background: $primaryColor;
+    border-radius: 20px;
+}
+
+.applicationManagement{
     text-align: center;
     min-height: 0;
 
@@ -77,9 +97,137 @@
                 text-align: center;
                 margin-bottom: 30px;
 
-                a{
+                button{
                     text-decoration: none;
                     @include primaryButton();
+                }
+            }
+        }
+
+    }
+
+
+}
+
+#startNewApp{
+    text-align: left;
+
+    h5{
+        font-weight: bold;
+    }
+
+    .wizard__progress{
+        height: 100px;
+        border-radius: 75px;
+        border: 1px solid $primaryColor;
+        // padding: 25px;
+        padding: 7px 5px;
+        text-align: center;
+        margin-bottom: 20px;
+
+        .row{
+            position: relative;
+            .col {
+                position: relative;
+                height: calc(100px - 15px);
+                padding: 15px;
+                z-index: 1;
+    
+                h6,p{
+                color: $primaryColor;
+                font-weight: bold;
+                }
+    
+                p{
+                    font-weight: lighter;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .row.progress__step-1{
+            &::after{
+                @include progressBar(35%)
+            }
+        }
+
+        .row.progress__step-2{
+            &::after{
+                @include progressBar(70%)
+            }
+        }
+
+        .row.progress__step-3{
+            &::after{
+                @include progressBar(100%)
+            }
+        }
+
+        .col.active{
+            h6,p{
+                color: $Color7;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .app__radioBox{
+        padding: 30px 42px;
+        background: $Color6;
+        border-radius: 25px;
+        margin-bottom: 20px;
+
+        h5{
+            margin-bottom: 20px;
+            font-weight: bolder;
+        }
+
+        p{
+            font-weight: 500;
+        }
+    }
+    
+    .confirm__button{
+        background: $Color6;
+        padding: 25px 32px;
+
+        p{
+            font-size: 14px;
+        }
+
+        .primary__button{
+            @include primaryButton();
+        }
+    }
+}
+
+@media(max-width:576px){
+    #startNewApp{
+        text-align: center;
+        .wizard__progress{
+            margin: auto;
+            border-radius: 20px;
+            width: 60%;
+            height: 250px;
+            margin-bottom: 20px;
+
+            .row.progress__step-1{
+    
+                &::after{
+                    @include progressBarHp(33.3%);
+                }
+            }
+
+            .row.progress__step-2{
+    
+                &::after{
+                    @include progressBarHp(66.6%);
+                }
+            }
+
+            .row.progress__step-3{
+                &::after{
+                    @include progressBarHp(100%);
                 }
             }
         }

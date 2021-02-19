@@ -319,7 +319,7 @@
         </div>
     </header>
 
-    <!class="ml-4"-- Jumbotron -->
+    <!-- Jumbotron -->
     <div class="jumbotron__studentEnrollment">
         <div class="container-fluid">
             <div class="row">
@@ -428,7 +428,7 @@
 
     <!-- main content -->
     <!-- App management landing page -->
-    <section class="aplicationManagement">
+    <section class="applicationManagement">
       <div class="app__header">
         <h2>International Programs</h2>
         <h4>STUDENT ENROLLMENT</h4>
@@ -460,12 +460,64 @@
                   </table>
                 </div>
 
-                <div class="app__button">
-                  <a href="#">Start New Application</a>
+                <div class="app__button" id="btnNewApp">
+                  <button class="btn button__primary">Start New Application</button>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- content pemilihan program degree or non degree -->
+    <section id="startNewApp" class="d-none">
+      <div class="container">
+        <h5>Start New Application</h5>
+
+        <!-- wizard-progress -->
+        <div class="wizard__progress">
+          <div class="container">
+            <div class="row justify-content-center progress__step-1">
+              <div class="col active">
+                <h6>Applications</h6>
+                <p>Select Type</p>
+              </div>
+              <div class="col">
+                <h6>Applications</h6>
+                <p>Select Type</p>
+              </div>
+              <div class="col">
+                <h6>Applications</h6>
+                <p>Select Type</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- checkbox for degree on non degree -->
+        <div class="app__radioBox">
+          <h5>Applications</h5>
+          <p>Select an application type :</p>
+
+          <!-- form radio -->
+          <form>
+            <div class="radioForm">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="app_radio" id="degree" value="degree">
+                <label class="form-check-label" for="degree">Degree Program</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="app_radio" id="nonDegree" value="nonDegree">
+                <label class="form-check-label" for="nonDegree">Non Degree program</label>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="confirm__button">
+          <p>Please click "Next" after selecting the application type</p>
+          <button class="btn primary__button" id="nextBtn">Next</button>
         </div>
       </div>
     </section>
@@ -559,6 +611,6 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"
     ></script>
-    <script src="./../../assets/scripts/main.js"></script>
+    <script type="module" src="./../../assets/scripts/main.js"></script>
 </body>
 </html>

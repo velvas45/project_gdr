@@ -1,3 +1,5 @@
+import {getDisplay} from './enrollment.js';
+
 const sidebarButton = document.querySelector('#sidebarCall');
 const closeButton = document.querySelector('.sidebar__closeBtn');
 const trimWord = document.querySelectorAll('#describeString');
@@ -52,4 +54,9 @@ const swiper = new Swiper('.swiper-container', {
     },
 });
 
+// pembuatan tanggal
 year.innerHTML = new Date().getFullYear();
+
+// getDisplay
+getDisplay();
+

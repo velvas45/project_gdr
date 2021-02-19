@@ -154,7 +154,7 @@ header .sidebar .sidebar__left .sidebar__closeBtn {
   position: absolute;
   top: 15px;
   right: 20px;
-  font-size: 30px;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -1200,25 +1200,23 @@ section .gundarGraduates__join .join__container .container .primary__button {
   font-size: 16px;
 }
 
-.aplicationManagement {
-  width: 90%;
-  margin: 15px auto;
+.applicationManagement {
   text-align: center;
   min-height: 0;
 }
 
-.aplicationManagement .app__header {
+.applicationManagement .app__header {
   margin-top: 20px;
 }
 
-.aplicationManagement .app__header h2 {
+.applicationManagement .app__header h2 {
   color: #D1B590;
   font-size: 24px;
   font-weight: bold;
   font-family: 'Playfair Display', sans-serif;
 }
 
-.aplicationManagement .app__header h2::after {
+.applicationManagement .app__header h2::after {
   content: "";
   display: block;
   width: 16%;
@@ -1226,40 +1224,40 @@ section .gundarGraduates__join .join__container .container .primary__button {
   border-bottom: 2px solid #E3E3E3;
 }
 
-.aplicationManagement .app__header h4 {
+.applicationManagement .app__header h4 {
   font-size: 30px;
   margin-bottom: 15px;
   color: #885A89;
 }
 
-.aplicationManagement .app__content {
+.applicationManagement .app__content {
   margin-top: 40px;
   text-align: left;
 }
 
-.aplicationManagement .app__content .app__table h5 {
+.applicationManagement .app__content .app__table h5 {
   font-weight: bold;
 }
 
-.aplicationManagement .app__content .app__table .table__app {
+.applicationManagement .app__content .app__table .table__app {
   padding: 8px 16px;
   width: 100%;
   background: #885A89;
 }
 
-.aplicationManagement .app__content .app__table .table__app p {
+.applicationManagement .app__content .app__table .table__app p {
   margin: auto;
   color: #FFF;
   font-weight: bold;
 }
 
-.aplicationManagement .app__content .app__table .app__button {
+.applicationManagement .app__content .app__table .app__button {
   margin-top: 20px;
   text-align: center;
   margin-bottom: 30px;
 }
 
-.aplicationManagement .app__content .app__table .app__button a {
+.applicationManagement .app__content .app__table .app__button button {
   text-decoration: none;
   background-color: #EF7B39;
   color: #FFF;
@@ -1268,6 +1266,160 @@ section .gundarGraduates__join .join__container .container .primary__button {
   border-radius: 7px;
   padding: 10px 40px;
   margin-right: 20px;
+}
+
+#startNewApp {
+  text-align: left;
+}
+
+#startNewApp h5 {
+  font-weight: bold;
+}
+
+#startNewApp .wizard__progress {
+  height: 100px;
+  border-radius: 75px;
+  border: 1px solid #885A89;
+  padding: 7px 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#startNewApp .wizard__progress .row {
+  position: relative;
+}
+
+#startNewApp .wizard__progress .row .col {
+  position: relative;
+  height: calc(100px - 15px);
+  padding: 15px;
+  z-index: 1;
+}
+
+#startNewApp .wizard__progress .row .col h6, #startNewApp .wizard__progress .row .col p {
+  color: #885A89;
+  font-weight: bold;
+}
+
+#startNewApp .wizard__progress .row .col p {
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+#startNewApp .wizard__progress .row.progress__step-1::after {
+  content: "";
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #885A89;
+  border-radius: 75px;
+}
+
+#startNewApp .wizard__progress .row.progress__step-2::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #885A89;
+  border-radius: 75px;
+}
+
+#startNewApp .wizard__progress .row.progress__step-3::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #885A89;
+  border-radius: 75px;
+}
+
+#startNewApp .wizard__progress .col.active h6, #startNewApp .wizard__progress .col.active p {
+  color: #FFF;
+  font-weight: bold;
+}
+
+#startNewApp .app__radioBox {
+  padding: 30px 42px;
+  background: #F4F4F4;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+#startNewApp .app__radioBox h5 {
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+#startNewApp .app__radioBox p {
+  font-weight: 500;
+}
+
+#startNewApp .confirm__button {
+  background: #F4F4F4;
+  padding: 25px 32px;
+}
+
+#startNewApp .confirm__button p {
+  font-size: 14px;
+}
+
+#startNewApp .confirm__button .primary__button {
+  background-color: #EF7B39;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 7px;
+  padding: 10px 40px;
+  margin-right: 20px;
+}
+
+@media (max-width: 576px) {
+  #startNewApp {
+    text-align: center;
+  }
+  #startNewApp .wizard__progress {
+    margin: auto;
+    border-radius: 20px;
+    width: 60%;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  #startNewApp .wizard__progress .row.progress__step-1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 33.3%;
+    top: 0;
+    left: 0;
+    background: #885A89;
+    border-radius: 20px;
+  }
+  #startNewApp .wizard__progress .row.progress__step-2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 66.6%;
+    top: 0;
+    left: 0;
+    background: #885A89;
+    border-radius: 20px;
+  }
+  #startNewApp .wizard__progress .row.progress__step-3::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #885A89;
+    border-radius: 20px;
+  }
 }
 
 * {
