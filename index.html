@@ -42,7 +42,7 @@
       <!-- navigation bar -->
       <div class="nav-bar">
         <ul class="nav-bar__menus">
-          <li class="nav-bar__menu">
+          <li class="nav-bar__menu" id="sidebar_menu">
             <span class="nav-bar__menu-1" id="sidebarCall">Menu</span>
           </li>
           <li class="nav-bar__menu">
@@ -894,5 +894,31 @@
 
     <!-- <script src="./assets/scripts/enrollment.js"></script> -->
     <script type="module" src="./assets/scripts/main.js"></script>
+
+    <script>
+      const swiper = new Swiper('.swiper-container', {
+    // slidesPerView:3,
+    // spaceBetween: 30,
+    // loop: true,
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    </script>
   </body>
 </html>

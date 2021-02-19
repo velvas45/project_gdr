@@ -17,6 +17,7 @@
     font-size: 30px;
     margin-bottom: 15px;
     color: $primaryColor;
+    font-weight: 700;
 }
 
 @mixin primaryButton{
@@ -77,7 +78,7 @@
         
         .app__table{
             h5{
-                font-weight: bold;
+                font-weight: 500;
             }
 
             .table__app{
@@ -88,8 +89,14 @@
                 p{
                     margin: auto;
                     color: $Color7;
-                    font-weight: bold;
+                    font-weight: 500;
                 }
+
+
+            }
+
+            th{
+                font-weight: normal;
             }
 
             .app__button{
@@ -197,6 +204,33 @@
 
         .primary__button{
             @include primaryButton();
+        }
+    }
+
+    .nav-link.active{
+        background-color: $primaryColor;
+        color: $Color7;
+        font-weight: 400;
+    }
+
+    .tab-content{
+        .tab-pane{
+            border-radius: 8px;
+            padding: 30px;
+            background: $Color6;
+        }
+
+        .form__identity h4, .form__residence h4, .form__study--information h4, .form__study--permitPeriod h4, .form__funding h4, .form__placeResidenceIndonesia h4, .form__passport h4{
+            font-size: 20px;
+            font-weight: 600;
+            color: $primaryColor;
+
+            &::after{
+                content: "";
+                display: block;
+                width: 100%;
+                border-bottom: 1px solid $Color12;
+            }
         }
     }
 }

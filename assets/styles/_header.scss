@@ -51,7 +51,6 @@ header{
                     font-size: 20px;
                     color: $Color10;
                     cursor: pointer;
-                    // pointer-events: none;
 
                     &::before{
                         content: "";
@@ -62,7 +61,7 @@ header{
                         width: 40px;
                         height: 12px;
                         margin-right: 5px;
-                        cursor: default;
+                        cursor: pointer;
                     }
                 }
 
@@ -335,6 +334,13 @@ header{
                             background: transparent;
                             border-left: 5px solid #EF7B39;
                             border-radius: 0;
+                        }
+                        
+                        .accordion-button.collapsed{
+                            &:hover{
+                                border-left: 5px solid #EF7B39;
+                                border-radius: 0;
+                            }
                         }
 
                         .accordion-button{

@@ -64,7 +64,7 @@ header .nav-bar .nav-bar__menus .nav-bar__menu:nth-child(1)::before {
   width: 40px;
   height: 12px;
   margin-right: 5px;
-  cursor: default;
+  cursor: pointer;
 }
 
 header .nav-bar .nav-bar__menus .nav-bar__menu:nth-child(2) {
@@ -354,6 +354,10 @@ header .sidebar .sidebar__right {
   }
   header .sidebar .sidebar__left .sidebar__menu .accordion__child-menu .accordion-button {
     font-size: 14px;
+  }
+  header .sidebar .sidebar__left .sidebar__menu .accordion__child-menu .accordion-button:active {
+    border-left: 5px solid #EF7B39;
+    border-radius: 0;
   }
   header .sidebar .sidebar__left .sidebar__menu .accordion__child-menu ul li {
     font-size: 12px;
@@ -1228,6 +1232,7 @@ section .gundarGraduates__join .join__container .container .primary__button {
   font-size: 30px;
   margin-bottom: 15px;
   color: #885A89;
+  font-weight: 700;
 }
 
 .applicationManagement .app__content {
@@ -1236,7 +1241,7 @@ section .gundarGraduates__join .join__container .container .primary__button {
 }
 
 .applicationManagement .app__content .app__table h5 {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .applicationManagement .app__content .app__table .table__app {
@@ -1248,7 +1253,11 @@ section .gundarGraduates__join .join__container .container .primary__button {
 .applicationManagement .app__content .app__table .table__app p {
   margin: auto;
   color: #FFF;
-  font-weight: bold;
+  font-weight: 500;
+}
+
+.applicationManagement .app__content .app__table th {
+  font-weight: normal;
 }
 
 .applicationManagement .app__content .app__table .app__button {
@@ -1377,6 +1386,31 @@ section .gundarGraduates__join .join__container .container .primary__button {
   border-radius: 7px;
   padding: 10px 40px;
   margin-right: 20px;
+}
+
+#startNewApp .nav-link.active {
+  background-color: #885A89;
+  color: #FFF;
+  font-weight: 400;
+}
+
+#startNewApp .tab-content .tab-pane {
+  border-radius: 8px;
+  padding: 30px;
+  background: #F4F4F4;
+}
+
+#startNewApp .tab-content .form__identity h4, #startNewApp .tab-content .form__residence h4, #startNewApp .tab-content .form__study--information h4, #startNewApp .tab-content .form__study--permitPeriod h4, #startNewApp .tab-content .form__funding h4, #startNewApp .tab-content .form__placeResidenceIndonesia h4, #startNewApp .tab-content .form__passport h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #885A89;
+}
+
+#startNewApp .tab-content .form__identity h4::after, #startNewApp .tab-content .form__residence h4::after, #startNewApp .tab-content .form__study--information h4::after, #startNewApp .tab-content .form__study--permitPeriod h4::after, #startNewApp .tab-content .form__funding h4::after, #startNewApp .tab-content .form__placeResidenceIndonesia h4::after, #startNewApp .tab-content .form__passport h4::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #BFBFBF;
 }
 
 @media (max-width: 576px) {

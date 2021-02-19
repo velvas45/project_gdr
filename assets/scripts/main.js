@@ -1,6 +1,6 @@
-import {getDisplay} from './enrollment.js';
+import {getDisplay,getDegreeOrNon} from './enrollment.js';
 
-const sidebarButton = document.querySelector('#sidebarCall');
+const sidebarButton = document.querySelector('#sidebar_menu');
 const closeButton = document.querySelector('.sidebar__closeBtn');
 const trimWord = document.querySelectorAll('#describeString');
 const year = document.querySelector('#newYear');
@@ -29,34 +29,10 @@ trimWord.forEach(data => {
     truncateString(data.textContent,40);
 });
 
-// Swiper js
-const swiper = new Swiper('.swiper-container', {
-    // slidesPerView:3,
-    // spaceBetween: 30,
-    // loop: true,
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
-    pagination: {
-        el: '.swiper-pagination',
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-});
-
 // pembuatan tanggal
 year.innerHTML = new Date().getFullYear();
 
-// getDisplay
+// enrollment landing page
 getDisplay();
+getDegreeOrNon();
 

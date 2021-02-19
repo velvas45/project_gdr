@@ -20,9 +20,11 @@ export function getDegreeOrNon() {
     if(nextBtn !== undefined){
         nextBtn.addEventListener('click', () => {
             if(nonDegreeRadio.checked){
-                // window.location.href = "./../../index.html";
+                window.location.href = "./../../pages/enrollment/non-degree/";
+                nonDegreeRadio.checked = false;
             }else if(degreeRadio.checked){
-                // window.location.href
+                window.location.href = "./../../pages/enrollment/degree/input-degree.html";
+                degreeRadio.checked = false;
             }
         })
     }
