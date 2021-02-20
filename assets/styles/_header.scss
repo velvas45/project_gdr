@@ -198,6 +198,13 @@ header{
                             border-radius: 0;
                         }
 
+                        .accordion-button.collapsed{
+                            &:hover,&:active{
+                                border-left: 5px solid #EF7B39;
+                                border-radius: 0;
+                            }
+                        }
+
                         .accordion-button{
                             color: #000;
                         }
@@ -232,6 +239,7 @@ header{
                         }
                     }
                 }
+                
                 .show{
                     background: #fff;
                 }
@@ -334,13 +342,6 @@ header{
                             background: transparent;
                             border-left: 5px solid #EF7B39;
                             border-radius: 0;
-                        }
-                        
-                        .accordion-button.collapsed{
-                            &:hover{
-                                border-left: 5px solid #EF7B39;
-                                border-radius: 0;
-                            }
                         }
 
                         .accordion-button{

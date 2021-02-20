@@ -215,6 +215,11 @@ header .sidebar .sidebar__left .sidebar__menu .accordion-item .accordion__child-
   border-radius: 0;
 }
 
+header .sidebar .sidebar__left .sidebar__menu .accordion-item .accordion__child-menu .accordion-button.collapsed:hover, header .sidebar .sidebar__left .sidebar__menu .accordion-item .accordion__child-menu .accordion-button.collapsed:active {
+  border-left: 5px solid #EF7B39;
+  border-radius: 0;
+}
+
 header .sidebar .sidebar__left .sidebar__menu .accordion-item .accordion__child-menu .accordion-button {
   color: #000;
 }
@@ -354,10 +359,6 @@ header .sidebar .sidebar__right {
   }
   header .sidebar .sidebar__left .sidebar__menu .accordion__child-menu .accordion-button {
     font-size: 14px;
-  }
-  header .sidebar .sidebar__left .sidebar__menu .accordion__child-menu .accordion-button:active {
-    border-left: 5px solid #EF7B39;
-    border-radius: 0;
   }
   header .sidebar .sidebar__left .sidebar__menu .accordion__child-menu ul li {
     font-size: 12px;
@@ -1388,6 +1389,17 @@ section .gundarGraduates__join .join__container .container .primary__button {
   margin-right: 20px;
 }
 
+#startNewApp .confirm__button .secondary__button {
+  font-size: 14px;
+  background: transparent;
+  border-radius: 12px;
+  color: #885A89;
+  padding: 10px 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid #885A89;
+}
+
 #startNewApp .nav-link.active {
   background-color: #885A89;
   color: #FFF;
@@ -1400,13 +1412,75 @@ section .gundarGraduates__join .join__container .container .primary__button {
   background: #F4F4F4;
 }
 
-#startNewApp .tab-content .form__identity h4, #startNewApp .tab-content .form__residence h4, #startNewApp .tab-content .form__study--information h4, #startNewApp .tab-content .form__study--permitPeriod h4, #startNewApp .tab-content .form__funding h4, #startNewApp .tab-content .form__placeResidenceIndonesia h4, #startNewApp .tab-content .form__passport h4 {
+#startNewApp .tab-content .tab-pane form label {
+  font-size: 16px;
+}
+
+#startNewApp .tab-content .tab-pane form label span {
+  font-weight: 600;
+  color: crimson;
+}
+
+#startNewApp .tab-content .tab-pane form input, #startNewApp .tab-content .tab-pane form select {
+  border: 1px solid #885A89;
+  border-radius: 6px;
+}
+
+#startNewApp .tab-content .tab-pane form input[type="file"] {
+  border: 2px solid #885A89;
+  border-radius: 10px;
+}
+
+#startNewApp .tab-content .tab-pane .disclaimer__content {
+  padding: 20px 40px;
+}
+
+#startNewApp .tab-content .tab-pane .disclaimer__content h5 {
+  font-weight: 500;
+}
+
+#startNewApp .tab-content .tab-pane .disclaimer__content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#startNewApp .tab-content .tab-pane .disclaimer__content ul li {
+  font-size: 16px;
+  text-align: justify;
+}
+
+#startNewApp .tab-content .tab-pane .disclaimer__content ul li span {
+  font-weight: 600;
+}
+
+#startNewApp .tab-content .tab-pane .disclaimer__content ul li::before {
+  content: ".";
+  color: #885A89;
+  display: inline-block;
+  font-size: 100px;
+  line-height: 0px;
+  margin-right: 10px;
+}
+
+#startNewApp .tab-content .tab-pane #scholarshipHelp {
+  font-size: 12px;
+}
+
+#startNewApp .tab-content .tab-pane .btn__save {
+  padding: 10px 30px;
+  background-color: #885A89;
+  color: #FFF;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+#startNewApp .tab-content .form__identity h4, #startNewApp .tab-content .form__residence h4, #startNewApp .tab-content .form__study--information h4, #startNewApp .tab-content .form__study--permitPeriod h4, #startNewApp .tab-content .form__funding h4, #startNewApp .tab-content .form__placeResidenceIndonesia h4, #startNewApp .tab-content .form__passport h4, #startNewApp .tab-content h4 {
   font-size: 20px;
   font-weight: 600;
   color: #885A89;
 }
 
-#startNewApp .tab-content .form__identity h4::after, #startNewApp .tab-content .form__residence h4::after, #startNewApp .tab-content .form__study--information h4::after, #startNewApp .tab-content .form__study--permitPeriod h4::after, #startNewApp .tab-content .form__funding h4::after, #startNewApp .tab-content .form__placeResidenceIndonesia h4::after, #startNewApp .tab-content .form__passport h4::after {
+#startNewApp .tab-content .form__identity h4::after, #startNewApp .tab-content .form__residence h4::after, #startNewApp .tab-content .form__study--information h4::after, #startNewApp .tab-content .form__study--permitPeriod h4::after, #startNewApp .tab-content .form__funding h4::after, #startNewApp .tab-content .form__placeResidenceIndonesia h4::after, #startNewApp .tab-content .form__passport h4::after, #startNewApp .tab-content h4::after {
   content: "";
   display: block;
   width: 100%;

@@ -205,6 +205,17 @@
         .primary__button{
             @include primaryButton();
         }
+
+        .secondary__button{
+            font-size: 14px;
+            background: transparent;
+            border-radius: 12px;
+            color: $primaryColor;
+            padding: 10px 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: 1px solid $primaryColor;
+        }
     }
 
     .nav-link.active{
@@ -218,9 +229,73 @@
             border-radius: 8px;
             padding: 30px;
             background: $Color6;
+
+            form{
+                label{
+                    font-size: 16px;
+    
+                    span{
+                        font-weight: 600;
+                        color: crimson;
+                    }
+                }
+    
+                input,select {
+                    border: 1px solid $primaryColor;
+                    border-radius: 6px;
+                }
+    
+                input[type="file"]{
+                    border: 2px solid $primaryColor;
+                    border-radius: 10px;
+                }
+            }     
+
+            .disclaimer__content{
+                padding: 20px 40px;
+
+                h5{
+                    font-weight: 500;
+                }
+
+                ul{
+                    list-style: none;
+                    padding: 0;
+
+                    li{
+                        font-size: 16px;
+                        text-align: justify;
+
+                        span{
+                            font-weight: 600;
+                        }
+
+                        &::before{
+                            content: ".";
+                            color: $primaryColor;
+                            display: inline-block;
+                            font-size: 100px;
+                            line-height: 0px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+
+            #scholarshipHelp {
+                font-size: 12px;
+            }
+
+            .btn__save{
+                padding: 10px 30px;
+                background-color: $primaryColor;
+                color: $Color7;
+                border-radius: 12px;
+                text-transform: uppercase;
+            }
         }
 
-        .form__identity h4, .form__residence h4, .form__study--information h4, .form__study--permitPeriod h4, .form__funding h4, .form__placeResidenceIndonesia h4, .form__passport h4{
+        .form__identity h4, .form__residence h4, .form__study--information h4, .form__study--permitPeriod h4, .form__funding h4, .form__placeResidenceIndonesia h4, .form__passport h4, h4{
             font-size: 20px;
             font-weight: 600;
             color: $primaryColor;
