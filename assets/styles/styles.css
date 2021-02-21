@@ -1087,6 +1087,23 @@ section .gundarGraduates__join .join__container .container .primary__button {
   font-size: 15px;
 }
 
+@media (max-width: 1600px) {
+  .gunadarma__icons {
+    margin-top: -25%;
+  }
+  .gunadarma__icons .gunadarma__icon {
+    text-align: center;
+    margin-top: calc(100% - 20px);
+  }
+  .gunadarma__icons .gunadarma__icon p:nth-child(1) {
+    color: #885A89;
+  }
+  .gunadarma__icons .gunadarma__icon p:nth-child(2) {
+    text-align: justify;
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 992px) {
   section .gundarGraduates__join .join__container .container {
     top: 20px;
