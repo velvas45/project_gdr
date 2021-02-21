@@ -513,20 +513,6 @@ section{
 @media(max-width:1600px){
     .gunadarma__icons{
         margin-top: -25%;
-    
-        .gunadarma__icon{
-            text-align: center;
-            margin-top: calc(100% - 20px);
-    
-            p:nth-child(1){
-                color: $primaryColor;
-            }
-    
-            p:nth-child(2) {
-                text-align: justify;
-                font-size: 15px;
-            }
-        }
     }
 }
 
