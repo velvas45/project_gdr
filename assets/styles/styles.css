@@ -3,7 +3,7 @@ header .info-gundar {
   background: #885A89;
   padding: 22px 80px 22px 0;
   text-align: right;
-  font-weight: 700;
+  font-weight: 500;
   width: 100%;
 }
 
@@ -1395,6 +1395,11 @@ section .gundarGraduates__join .join__container .container .primary__button {
   margin-right: 20px;
 }
 
+#startNewApp .confirm__button .primary__button a {
+  text-decoration: none;
+  color: #FFF;
+}
+
 #startNewApp .confirm__button .secondary__button {
   font-size: 14px;
   background: transparent;
@@ -1491,6 +1496,13 @@ section .gundarGraduates__join .join__container .container .primary__button {
   display: block;
   width: 100%;
   border-bottom: 1px solid #BFBFBF;
+  margin-top: 4px;
+}
+
+#startNewApp .tab-content .form__identity h4::before, #startNewApp .tab-content .form__residence h4::before, #startNewApp .tab-content .form__study--information h4::before, #startNewApp .tab-content .form__study--permitPeriod h4::before, #startNewApp .tab-content .form__funding h4::before, #startNewApp .tab-content .form__placeResidenceIndonesia h4::before, #startNewApp .tab-content .form__passport h4::before, #startNewApp .tab-content h4::before {
+  content: url("./../images/icons/ic_form.png");
+  width: 100%;
+  margin-right: 10px;
 }
 
 @media (max-width: 576px) {
