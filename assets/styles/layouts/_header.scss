@@ -1,13 +1,3 @@
-@mixin addIconBefore($urlImg, $width, $height) {
-    content: "";
-    background-image: url($urlImg);
-    background-size: $width $height;
-    display: inline-block;
-    width: $width;
-    height: $height;
-    margin-right: 20px;
-}
-
 header{
     .info-gundar{
         background: $primaryColor;

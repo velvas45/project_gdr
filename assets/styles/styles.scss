@@ -1,28 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
-@mixin flexCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-@import "./variables";
-@import "./header";
-@import "./jumbotron";
-@import "./landingPage/mainContent";
-@import "./templateIcon";
-@import "./enrollment/enrollment";
+// @import "./variables";
+// @import "./header";
+// @import "./jumbotron";
+// @import "./landingPage/mainContent";
+// @import "./templateIcon";
+// @import "./enrollment/enrollment";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
+// @import "./contact";
+// @import "./footer";
 
-html::-webkit-scrollbar{
-    display: none
-}
-@import "./contact";
-@import "./footer";
+// Base
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/global";
+
+// Component
+@import "./components/jumbotron";
+@import "./components/contact";
+@import "./components/templateIcon";
+
+// layouts
+@import "./layouts/header";
+@import "./layouts/footer";
+
+// pages
+@import "./pages/mainContent";
+@import "./pages/enrollment";
 
 
 
