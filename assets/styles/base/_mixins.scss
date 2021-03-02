@@ -20,8 +20,11 @@
 }
 
 @mixin styleSubTitle{
-    font-size: 20px;
+    font-size: 32px;
     margin-bottom: 15px;
+    font-weight: bold;
+    color: $primaryColor;
+    text-transform: uppercase;
 }
 
 @mixin primaryButton{

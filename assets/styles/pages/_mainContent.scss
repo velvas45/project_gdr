@@ -13,7 +13,7 @@ section{
     
         .row{
             row-gap: 20px;
-            column-gap: 5px;
+            column-gap: 20px;
         }
 
         a{
@@ -467,9 +467,9 @@ section{
     }
 }
 
-@media(max-width:1600px){
+@media(min-width:1400px){
     .gunadarma__icons{
-        margin-top: -5%;
+        margin-top: -10%;
     }
 }
 

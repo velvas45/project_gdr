@@ -17,12 +17,14 @@
 @import "./components/jumbotron";
 @import "./components/contact";
 @import "./components/templateIcon";
+@import "./components/customAccordion";
 
 // layouts
 @import "./layouts/header";
 @import "./layouts/footer";
 
 // pages
+@import "./pages/courses";
 @import "./pages/mainContent";
 @import "./pages/enrollment";
 

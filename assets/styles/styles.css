@@ -317,6 +317,85 @@ html::-webkit-scrollbar {
   font-size: 16px;
 }
 
+.accordion__course {
+  background-color: #885A89;
+  color: #FFF;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  padding: 9px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active__courses, .accordion:hover {
+  background-color: #885A89;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.accordion__courseShow {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: 0px;
+  padding: 0 18px;
+  padding-top: 10px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.accordion__courseShow .primary__button {
+  background-color: #EF7B39;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 7px;
+  padding: 10px 40px;
+  margin-right: 20px;
+  padding: 10px 60px;
+  margin: 20px auto;
+}
+
+.accordion__courseShow .accordion__content {
+  width: 60%;
+  margin: auto;
+  text-align: left;
+}
+
+.accordion__courseShow .accordion__content ul {
+  list-style: none;
+}
+
+.accordion__courseShow .accordion__content ul li {
+  text-align: justify;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.accordion__courseShow .accordion__content ul li::before {
+  content: "\2022";
+  font-size: 3.2rem;
+  vertical-align: middle;
+  line-height: 20px;
+  color: #885A89;
+}
+
+@media (max-width: 576px) {
+  .accordion__courseShow {
+    padding: 0;
+  }
+  .accordion__courseShow .accordion__content {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 header .info-gundar {
   background: #885A89;
   padding: 22px 80px 22px 0;
@@ -765,6 +844,225 @@ footer {
   }
 }
 
+.shortCourses__header {
+  margin-top: 20px;
+}
+
+.shortCourses__header h2 {
+  color: #D1B590;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+.shortCourses__header h2::after {
+  content: "";
+  display: block;
+  width: 16%;
+  margin: 20px auto;
+  border-bottom: 2px solid #E3E3E3;
+}
+
+.shortCourses__header h4 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #885A89;
+  text-transform: uppercase;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.shortCourses__mainContent {
+  margin: 30px 0;
+}
+
+.shortCourses__mainContent .card {
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom: 0px;
+}
+
+.shortCourses__mainContent .card .shortCourses__boxImg {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.shortCourses__mainContent .card .shortCourses__boxImg img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.shortCourses__mainContent .card .shortCourses__mainContent--description {
+  position: relative;
+  padding: 5px;
+  width: 90%;
+  margin: auto;
+  line-height: 2rem;
+  text-align: right;
+}
+
+.shortCourses__mainContent .card .shortCourses__mainContent--description h2 {
+  text-align: center;
+  color: #8AA7A2;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.shortCourses__mainContent .card .shortCourses__mainContent--description p {
+  text-align: justify;
+  font-size: 16px;
+}
+
+.shortCourses__mainContent .card .shortCourses__mainContent--description hr {
+  color: #885A89;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.shortCourses__context .row {
+  row-gap: 20px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.shortCourses__context a {
+  text-decoration: none;
+}
+
+.shortCourses__context .card {
+  border-radius: 7px;
+}
+
+.shortCourses__context .card .card-body {
+  text-align: center;
+  background: #F4F4F4;
+  color: #885A89;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.shortCourses__context .card .card-body .card-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.shortCourses__context .card:hover .card-body, .shortCourses__context .card:active .card-body {
+  background: #885A89;
+  color: #F4F4F4;
+}
+
+.gundarGraduates__join {
+  position: relative;
+}
+
+.gundarGraduates__join .join__container {
+  border-radius: 12px;
+  height: 120px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.gundarGraduates__join .join__container .join__background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.gundarGraduates__join .join__container .join__background img {
+  border-radius: 18px;
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gundarGraduates__join .join__container .container {
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  left: 0;
+  color: #FFF;
+  text-align: left;
+}
+
+.gundarGraduates__join .join__container .container p {
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.gundarGraduates__join .join__container .container p:nth-child(2) {
+  color: #D1B590;
+}
+
+.gundarGraduates__join .join__container .container .primary__button {
+  background-color: #EF7B39;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 7px;
+  padding: 10px 30px;
+  margin-right: 20px;
+}
+
+@media (max-width: 576px) {
+  .gundarGraduates__join .join__container .container {
+    top: 10px;
+    text-align: right;
+  }
+  .gundarGraduates__join .join__container .container p {
+    text-align: left;
+    margin: 0;
+    font-size: 16px;
+  }
+  .gundarGraduates__join .join__container .container .primary__button {
+    padding: 5px 30px;
+    margin-top: 10px;
+  }
+  .shortCourses__mainContent .card .shortCourses__boxImg {
+    height: 100%;
+  }
+  .shortCourses__mainContent .card .shortCourses__mainContent--description h2 {
+    font-size: 24px;
+  }
+  .shortCourses__mainContent .card .shortCourses__mainContent--description p {
+    font-size: 14px;
+  }
+}
+
 section {
   width: 90%;
   margin: 15px auto;
@@ -792,14 +1090,17 @@ section .interProgram__header h2::after {
 }
 
 section .interProgram__header h4 {
-  font-size: 20px;
+  font-size: 32px;
   margin-bottom: 15px;
+  font-weight: bold;
+  color: #885A89;
+  text-transform: uppercase;
 }
 
 section .interProgram__context .row {
   row-gap: 20px;
-  -webkit-column-gap: 5px;
-          column-gap: 5px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
 }
 
 section .interProgram__context a {
@@ -863,8 +1164,11 @@ section .about__header h2::after {
 }
 
 section .about__header h4 {
-  font-size: 20px;
+  font-size: 32px;
   margin-bottom: 15px;
+  font-weight: bold;
+  color: #885A89;
+  text-transform: uppercase;
 }
 
 section .about__content {
@@ -913,8 +1217,11 @@ section .lifeGunadarma__header h2::after {
 }
 
 section .lifeGunadarma__header h4 {
-  font-size: 20px;
+  font-size: 32px;
   margin-bottom: 15px;
+  font-weight: bold;
+  color: #885A89;
+  text-transform: uppercase;
 }
 
 section .lifeGunadarma__contents {
@@ -991,8 +1298,11 @@ section .research__header h2::after {
 }
 
 section .research__header h4 {
-  font-size: 20px;
+  font-size: 32px;
   margin-bottom: 15px;
+  font-weight: bold;
+  color: #885A89;
+  text-transform: uppercase;
 }
 
 section .research__contents .nav-tabs {
@@ -1084,8 +1394,11 @@ section .gundarGraduates__header h2::after {
 }
 
 section .gundarGraduates__header h4 {
-  font-size: 20px;
+  font-size: 32px;
   margin-bottom: 15px;
+  font-weight: bold;
+  color: #885A89;
+  text-transform: uppercase;
 }
 
 section .gundarGraduates__contents .gundarGraduates__slider {
@@ -1260,9 +1573,9 @@ section .gundarGraduates__join .join__container .container .primary__button {
   font-size: 15px;
 }
 
-@media (max-width: 1600px) {
+@media (min-width: 1400px) {
   .gunadarma__icons {
-    margin-top: -5%;
+    margin-top: -10%;
   }
 }
 
@@ -1376,8 +1689,11 @@ section .gundarGraduates__join .join__container .container .primary__button {
 }
 
 .applicationManagement .app__header h4 {
-  font-size: 20px;
+  font-size: 32px;
   margin-bottom: 15px;
+  font-weight: bold;
+  color: #885A89;
+  text-transform: uppercase;
 }
 
 .applicationManagement .app__content {
