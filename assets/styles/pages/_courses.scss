@@ -1,5 +1,5 @@
 // short courses
-.shortCourses__header{
+.shortCourses__header,.undergraduateCourse__header{
     @include sectionHeader();
 }
 
@@ -173,6 +173,180 @@
     }
 }
 
+// undergraduate courses
+#undergraduateCourse , #postgraduateCourse{
+    text-align: center;
+    margin-bottom: 20px;
+
+    .undergraduateCourse__context,.postgraduateCourse__context{
+        text-align: left;
+        .card{
+
+            .cardBachelor__header{
+                padding: 60px 60px 0;
+
+                h2{
+                font-size: 24px;
+                font-weight: 600;
+                color: $primaryColor;
+                }
+
+                p{
+                    font-size: 16px;
+                    color: $Color5;
+                    font-weight: 400;
+                }
+            }
+
+            .cardBachelor__content--1{
+                padding: 0 60px;
+            }
+
+            h4{
+                font-size: 22px;
+                color: $primaryColor;
+                font-weight: 500;
+            }
+
+            ul, ol {
+                padding-left: 1rem;
+            }
+
+            ul {
+                list-style-type: square;
+
+                li {
+                    padding-left: 0rem;
+                    &::marker{
+                        color: $primaryColor;
+                        font-size: 22px;
+                    }
+                }
+            }
+
+            li{
+                font-size: 16px;
+                padding-left: 1rem;
+                text-align: justify;
+            }
+
+
+            .accordion__undergraduate{
+                padding: 0 45px;
+
+                .important__notice{
+                    padding: 20px 80px;
+
+                    ul{
+                        padding-left: 3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .formSearch{
+        select.form-select.form-select-sm{
+            border: none;
+            border-bottom: 1px solid;
+            border-radius: 0;
+            color: $primaryColor;
+
+            &:focus{
+                box-shadow: none;
+                outline: none;
+            }
+        }
+
+        select.form-select.form-select-sm option{
+            color: $Color13;
+            &:first-child{
+                color: $primaryColor;
+            }
+        }
+    }
+
+    .menuSearch{
+        .menuSearch__title{
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+
+        button.accordion-button:not(.collapsed){
+            background: $primaryColor;
+            color: $Color7;
+            font-size: 18px;
+            font-weight: 700;
+
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            }
+
+            &::after{
+                color:$Color7;
+            }
+        }
+
+        button.accordion-button.collapsed{
+            background: $Color5;
+            color: $primaryColor;
+            font-size: 18px;
+            font-weight: 700;
+
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            }
+
+            &::after{
+                color: blue;
+            }
+        }
+
+        .accordion-collapse{
+            .accordionCollapse__title{
+                color: $primaryColor;
+                font-weight: 600;
+                font-size: 18px;
+            }
+
+            h6{
+                font-weight: 500;
+            }
+
+            .accordionCollapse__courseInformation{
+                text-align: justify;
+                font-size: 15px;
+            }
+
+            .tuitionFee__content{
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    // display: block;
+                    border-right: 1px solid $Color5;
+                    height: 50%;
+                    top: 1rem;
+                    right: 1rem;
+                }
+            }
+
+            .button__apply{
+                margin-top: 10px;
+                text-align: center;
+                display: inline-block;
+
+                .btn__primary{
+                    @include primaryButton();
+                }
+            }
+        }
+    }
+}
+
 @media(max-width:576px){
     .gundarGraduates__join{
         .join__container{
@@ -211,5 +385,81 @@
                     }
                 }
             }
+    }
+
+    #undergraduateCourse,#postgraduateCourse{
+        .undergraduateCourse__context , .postgraduateCourse__context{
+            .card{
+                .cardBachelor__header{
+                    padding: 20px;
+
+                    h2{
+                    font-size: 22px;
+                    }
+                }
+
+                .cardBachelor__content--1{
+                    padding: 0 20px 0;
+                }
+
+                h4{
+                    font-size: 20px;
+                    color: $primaryColor;
+                    font-weight: 500;
+                }
+
+                ul, ol {
+                    padding-left: .5rem;
+                }
+
+                li{
+                    font-size: 15px;
+                    padding-left: .5rem;
+                }
+
+                .accordion__undergraduate{
+                    padding: 0 15px;
+
+                    .important__notice{
+                        padding: 20px 15px;
+
+                        ul{
+                            padding-left: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .menuSearch{
+    
+            button.accordion-button:not(.collapsed){
+                font-size: 16px;
+            }
+    
+            button.accordion-button.collapsed{
+                font-size: 16px;
+            }
+            .accordion-collapse{
+                .accordionCollapse__title{
+                    font-size: 16px;
+                }
+
+                h6{
+                    font-size: 14px;
+                }
+
+                p{
+                    font-size: 14px;
+                }
+    
+                .tuitionFee__content{
+                    position: relative;
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 }

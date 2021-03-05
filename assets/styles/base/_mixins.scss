@@ -17,6 +17,10 @@
                 margin: 20px auto;
                 border-bottom: 2px solid #E3E3E3;
     }
+
+    @media (max-width:576px) {
+        font-size: 20px;   
+    }
 }
 
 @mixin styleSubTitle{
@@ -25,6 +29,10 @@
     font-weight: bold;
     color: $primaryColor;
     text-transform: uppercase;
+
+    @media(max-width:576px) {
+        font-size: 24px;   
+    }
 }
 
 @mixin primaryButton{

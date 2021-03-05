@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gunadarma University</title>
+
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./../../../assets/styles/styles.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- navigation bar -->
+        <div class="nav-bar">
+            <ul class="nav-bar__menus">
+                <li class="nav-bar__menu" id="sidebar_menu">
+                    <span class="nav-bar__menu-1" id="sidebarCall">Menu</span>
+                </li>
+                <li class="nav-bar__menu">
+                    <img src="./../../../assets/images/logo-gundar.png" alt="Gunadarma" />
+                </li>
+                <li class="nav-bar__menu">
+                    <div class="nav-bar__numberInfo">
+                        <p>Telephone</p>
+                        <p>123456</p>
+                    </div>
+                </li>
+                <li class="nav-bar__menu">
+                    <div class="nav-bar__addresInfo">
+                        <p>Address</p>
+                        <p>Jl. Margonda raya, Depok</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-12 sidebar__left">
+                        <div class="sidebar__closeBtn">
+                            <button type="button" class="btn-close" aria-label="Close"></button>
+                        </div>
+                        <div class="sidebar__logo">
+                            <img src="./assets/images/logo-gundar.png" alt="gunadarma" />
+                        </div>
+                        <div class="sidebar__menu">
+                            <div class="accordion accordion-flush" id="accordionCourse">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="menuCourse">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#course" aria-expanded="false"
+                                            aria-controls="course">
+                                            Courses
+                                        </button>
+                                    </h2>
+                                    <div id="course" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                        data-bs-parent="#accordionCourse">
+                                        <div class="accordion-body">
+                                            <div class="list-menu">
+                                                <div class="accordion__child-menu">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="findCourseParent">
+                                                            <button class="accordion-button collapsed accordion__child"
+                                                                type="button" data-bs-toggle="collapse"
+                                                                data-bs-target="#findCourse" aria-expanded="false"
+                                                                aria-controls="findCourse">
+                                                                Find a course
+                                                            </button>
+                                                        </h2>
+                                                        <div id="findCourse"
+                                                            class="accordion-collapse collapse accordion__show"
+                                                            aria-labelledby="findCourse"
+                                                            data-bs-parent="#findCourseParent">
+                                                            <div class="accordion-body">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">Short Courses</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Undergraduate Courses</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Postgraduate Courses</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="accordion-item">
+                                                        <a href="#" class="accordion-header" id="scholarships">
+                                                            <button class="accordion-button collapsed" type="button">
+                                                                Scholarships
+                                                            </button>
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="howToApplyParent">
+                                                            <button
+                                                                class="accordion-button collapsed accordion__child accordion__subMenu"
+                                                                type="button" data-bs-toggle="collapse"
+                                                                data-bs-target="#howToApply" aria-expanded="false"
+                                                                aria-controls="howToApply">
+                                                                How to apply
+                                                            </button>
+                                                        </h2>
+                                                        <div id="howToApply" class="accordion-collapse collapse"
+                                                            aria-labelledby="#howToApply"
+                                                            data-bs-parent="#howToApplyParent">
+                                                            <div class="accordion-body">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">Single Unit Applications</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Undergraduate Applications</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Postgraduate Applications</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="accordion-item">
+                                                        <a href="#" class="accordion-header" id="keyDates">
+                                                            <button class="accordion-button collapsed" type="button">
+                                                                Key Dates
+                                                            </button>
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="accordion-item">
+                                                        <a href="./pages/enrollment/student-enrollment.html"
+                                                            class="accordion-header" id="scholarships">
+                                                            <button class="accordion-button collapsed" type="button">
+                                                                Student Enrollment
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <a href="#" class="accordion-header" id="location">
+                                        <button class="accordion-button collapsed" type="button">
+                                            Location
+                                        </button>
+                                    </a>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <a href="#" class="accordion-header" id="aboutGunadarma">
+                                        <button class="accordion-button collapsed" type="button">
+                                            About Gunadarma
+                                        </button>
+                                    </a>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="lifeGunadarmaHeading">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#lifeGunadarma"
+                                            aria-expanded="false" aria-controls="lifeGunadarma">
+                                            Life at gunadarma
+                                        </button>
+                                    </h2>
+                                    <div id="lifeGunadarma" class="accordion-collapse collapse"
+                                        aria-labelledby="lifeGunadarmaHeading" data-bs-parent="#lifeGunadarmaHeading">
+                                        <div class="accordion-body">
+                                            <div class="accordion__child-menu">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Why study at Gunadarma</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Student life</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Graduations</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="researchHeading">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#research" aria-expanded="false"
+                                            aria-controls="research">
+                                            Research
+                                        </button>
+                                    </h2>
+                                    <div id="research" class="accordion-collapse collapse"
+                                        aria-labelledby="researchHeading" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="accordion__child-menu">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Research groups</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Research and industry</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Our research response to COVID-19</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <a href="#" class="accordion-header" id="alumni">
+                                        <button class="accordion-button collapsed" type="button">
+                                            Alumni
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-0 d-none d-lg-block sidebar__right"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- jumbotron -->
+    <div class="jumbotron__courses">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-12">
+                    <div class="jumbotron__breadcrumb">
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="./../../../index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Undergraduate Course</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="jumbotron__preview">
+                        <h2>Undergraduate Course</h2>
+                        <h5>Premium. Proven. Loved. Study at Gunadarma</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa corrupti voluptas vel
+                            quisquam illum voluptate quod impedit ab nisi, esse mollitia ad aliquid delectus ea sit
+                            autem officiis. Reprehenderit, tenetur!
+                        </p>
+                    </div>
+
+                    <div class="jumbotron__button--primary">
+                        <button class="btn">Chat With Us</button>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="jumbotron__image-preview">
+                        <div class="jumbotron__boxImg">
+                            <img src="./../../../assets/images/gundar-preview.png" alt="Gunadarma Preview">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- icons -->
+    <div class="icons">
+        <div class="icons__header">
+            <h5>Premium. Proven. Loved. Study at Gunadarma</h5>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center">
+                <div class="col">
+                    <div class="gunadarma__icon">
+                        <div class="iconBox">
+                            <img src="./../../../assets/images/icons/medal.png" alt="medal" />
+                        </div>
+                        <div class="content">
+                            <p>Best Private University</p>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+                                corrupti molestias commodi, ut amet quas quisquam neque facere
+                                ullam, recusandae quam nemo quo, adipisci iure possimus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gunadarma__icon">
+                        <div class="iconBox">
+                            <img src="./../../../assets/images/icons/mortarboard.png" alt="medal" />
+                        </div>
+                        <div class="content">
+                            <p>High Achieving Graduates</p>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+                                corrupti molestias commodi, ut amet quas quisquam neque facere
+                                ullam, recusandae quam nemo quo, adipisci iure possimus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gunadarma__icon">
+                        <div class="iconBox">
+                            <img src="./../../../assets/images/icons/online-course.png" alt="medal" />
+                        </div>
+                        <div class="content">
+                            <p>Online Learning</p>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+                                corrupti molestias commodi, ut amet quas quisquam neque facere
+                                ullam, recusandae quam nemo quo, adipisci iure possimus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gunadarma__icon">
+                        <div class="iconBox">
+                            <img src="./../../../assets/images/icons/stats (1).png" alt="medal" />
+                        </div>
+                        <div class="content">
+                            <p>Student Satisfaction</p>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+                                corrupti molestias commodi, ut amet quas quisquam neque facere
+                                ullam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <main>
+        <div class="container-fluid">
+            <div id="undergraduateCourse" class="p-2">
+                <div class="undergraduateCourse__header">
+                    <h2>International Programs</h2>
+                    <h4>Undergraduate Courses</h4>
+                </div>
+                <div class="undergraduateCourse__context">
+                    <div class="container">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="diploma-tab" data-bs-toggle="tab"
+                                    data-bs-target="#diploma" type="button" role="tab" aria-controls="diploma"
+                                    aria-selected="true">
+                                    Diploma
+                                </button>
+                                <button class="nav-link" id="bachelor-degree-tab" data-bs-toggle="tab"
+                                    data-bs-target="#bachelor-degree" type="button" role="tab"
+                                    aria-controls="bachelor-degree" aria-selected="false">
+                                    Bachelor Degree
+                                </button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="diploma" role="tabpanel"
+                                aria-labelledby="diploma-tab">
+                                Diploma
+                            </div>
+                            <div class="tab-pane fade" id="bachelor-degree" role="tabpanel"
+                                aria-labelledby="bachelor-degree-tab">
+                                <div class="card">
+                                    <div class="cardBachelor__header">
+                                        <h2>BACHELOR DEGREE (INTERNATIONAL)</h2>
+                                        <p>English as a medium instruction</p>
+                                    </div>
+                                    <div class="cardBachelor__content--1">
+                                        <h4>International Bachelor Categories:</h4>
+                                        <ol>
+                                            <li>Single Degree, student will be awarded a degree from UL</li>
+                                            <li>Double Degree, student will obtain one degree from UI and one more from
+                                                partner
+                                                university.</li>
+                                        </ol>
+                                    </div>
+                                    <!-- accordion -->
+                                    <div class="accordion__courseShow accordion__undergraduate">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h4>General Requirements</h4>
+                                                    <ul>
+                                                        <li>
+                                                            High school graduated or equivalent no longer than 5 years
+                                                            of
+                                                            the
+                                                            time registration (e.g. admission 2019 for high school
+                                                            graduates
+                                                            in
+                                                            2019,2018,2017,2016,2015)
+                                                        </li>
+                                                        <li>
+                                                            Foculty of Medicine applicant should be graduating from
+                                                            nationally
+                                                            accredited high schools/completing general certificate of
+                                                            education
+                                                            (A level) or graduate of Diploma Program of European
+                                                            Baccalaureate
+                                                            or Diploma Program of International Baccalaureate or Passing
+                                                            international education qualification equivalent to any of
+                                                            the
+                                                            above.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h4>Documents Required</h4>
+                                                    <ol>
+                                                        <li>Non Indonesian passport</li>
+                                                        <li>Latest color photo (full face without
+                                                            hat/glasses/accessories)
+                                                        </li>
+                                                        <li>High school diploma or equivalent</li>
+                                                        <li>High school academic transcript or equivalent</li>
+                                                        <li>English Proficiency certificate: International TOEFL
+                                                            (www.ets.org)
+                                                            with minimum score of 173(CBT), or 61(iBT) or IELTS
+                                                            (http://ielts.org) with minimum score of 5.5 TOEFL/IELTS
+                                                            score
+                                                            are
+                                                            valid for two years from the test date. If you have or will
+                                                            have
+                                                            received a degree from an institution where English is the
+                                                            primary
+                                                            language of instruction, you do not need to submit
+                                                            TOEFL/IELTS
+                                                            certificate. <br> For Faculty of Medicine applicant,
+                                                            International
+                                                            TOEFL score must above 80(iBT) or IELTS score must above 7.
+                                                            <br>
+                                                            For
+                                                            Faculty of Economics and Business applicant, International
+                                                            TOEFL
+                                                            score must above 213(CBT), or 70 (iBT) or IELTS score must
+                                                            above
+                                                            6.
+                                                            <br> For Faculty of Law applicant, International TOEFL score
+                                                            must
+                                                            above 213 (CBT), or 80(iBT) or IELTS score must above 6.
+                                                        </li>
+                                                        <li>Faculty of Medicine and Faculty of Law applicant required to
+                                                            hold
+                                                            Indonesia language proficiency test (TIBA) certificate is
+                                                            mandatory
+                                                            document for Faculty of Medicine applicant, except those
+                                                            from
+                                                            high
+                                                            school with entirely the class in Bahasa Indonesia </li>
+                                                        <li>Motivation Statement</li>
+                                                        <li>Health Certificate</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                            <div class="row important__notice">
+                                                <div class="col">
+                                                    <h4>Important Notice:</h4>
+                                                    <ul>
+                                                        <li>All of the documents are submitted online on the
+                                                            registration
+                                                            account.</li>
+                                                        <li>The faculty may apply higher specific requirements</li>
+                                                        <li>Re-check your online application status to ensure all of the
+                                                            form
+                                                            completely filled and all of the documents successfully
+                                                            submitted.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <button class="accordion__course">
+                                        <i class="bi bi-caret-down-fill"></i>
+                                    </button>
+
+                                </div>
+                                <!-- form search undergraduate and postgraduate -->
+                                <div class="formSearch">
+                                    <form
+                                        class="row row-cols-lg-auto g-3 align-items-center justify-content-evenly py-5">
+                                        <div class="col-12">
+                                            <div class="row row-cols-lg-auto g-3 align-items-center">
+                                                <div class="col-12">
+                                                    <select class="form-select form-select-sm"
+                                                        aria-label=".form-select-sm example">
+                                                        <option selected>Open this select menu</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12">
+                                                    <select class="form-select form-select-sm"
+                                                        aria-label=".form-select-sm example">
+                                                        <option selected>Open this select menu</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12">
+                                                    <select class="form-select form-select-sm"
+                                                        aria-label=".form-select-sm example">
+                                                        <option selected>Open this select menu</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12">
+                                                    <select class="form-select form-select-sm"
+                                                        aria-label=".form-select-sm example">
+                                                        <option selected>Open this select menu</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn__submit btn-primary">Submit</button>
+                                            <button type="reset" class="btn btn__reset btn-primary">reset</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- list menu form -->
+                                <div class="menuSearch">
+                                    <h2 class="menuSearch__title">Computer Science</h2>
+                                    <div class="accordion" id="accordionExample">
+                                        <!-- looping jika ada item lebih dari 1 -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="item1">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#computerSystems"
+                                                    aria-expanded="false" aria-controls="computerSystems">
+                                                    Computer Systems
+                                                </button>
+                                            </h2>
+                                            <div id="computerSystems" class="accordion-collapse collapse p-md-3"
+                                                aria-labelledby="item1" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <div class="row my-md-2">
+                                                        <h4 class="accordionCollapse__title">Key Fact</h4>
+                                                        <div class="col">
+                                                            <div class="accordionCollapse__content mt-2 px-3">
+                                                                <div class="row row-cols-auto">
+                                                                    <div class="col-md-3">
+                                                                        <h6>Duration :</h6>
+                                                                    </div>
+                                                                    <div class="col-md-9">
+                                                                        <p>4 year full-time or part-time equivalent</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row row-cols-1">
+                                                                    <div class="col-md-3">
+                                                                        <h6>Campuses :</h6>
+                                                                    </div>
+                                                                    <div class="col-md-9">
+                                                                        <p>Depok, Kalimalang</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row row-cols-1">
+                                                                    <div class="col-md-3">
+                                                                        <h6>Key Dates :</h6>
+                                                                    </div>
+                                                                    <div class="col-md-9">
+                                                                        <p>Direct applications Deakin for Trimester 1
+                                                                            2021
+                                                                            close 21 February 2021</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row row-cols-1">
+                                                                    <div class="col-md-3">
+                                                                        <h6>Current Deakin Students :</h6>
+                                                                    </div>
+                                                                    <div class="col-md-9">
+                                                                        <p>To access your official course details for
+                                                                            the
+                                                                            year you started your degree</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row my-md-2">
+                                                        <h4 class="accordionCollapse__title">Course Information</h4>
+                                                        <div class="col pt-2 px-4">
+                                                            <p class="accordionCollapse__courseInformation">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Corporis expedita et dolor molestias adipisci animi
+                                                                ratione
+                                                                minus, pariatur aperiam debitis officia qui voluptates
+                                                                nostrum accusamus possimus odit tenetur dolores
+                                                                temporibus.
+                                                                Officia incidunt delectus laboriosam necessitatibus
+                                                                nisi,
+                                                                rerum repellat perferendis minus quos asperiores quas.
+                                                                Temporibus eligendi quas neque, id totam qui dolorem
+                                                                aliquam
+                                                                sequi, deleniti perspiciatis similique mollitia
+                                                                voluptates
+                                                                blanditiis error.
+                                                                Soluta ea qui laboriosam facere sapiente? Suscipit qui
+                                                                doloremque eius enim veritatis laudantium eligendi vel
+                                                                cumque minus magnam, in necessitatibus, amet debitis!
+                                                                Temporibus aliquid hic ad, eaque magnam soluta
+                                                                praesentium?
+                                                                Assumenda saepe nemo praesentium, itaque, explicabo,
+                                                                sapiente hic incidunt ad laudantium neque tenetur est!
+                                                                Cupiditate fugiat ab ratione cumque tempora, in porro
+                                                                possimus quis ex modi omnis. Sit, ex? Nemo?
+                                                                In, at soluta excepturi explicabo architecto, nam
+                                                                deleniti
+                                                                nisi laboriosam repellat doloribus quae. Voluptatum,
+                                                                dolor
+                                                                sequi! Qui voluptatum voluptate optio quam. Harum, nisi
+                                                                molestiae nihil labore cupiditate sint doloremque. Unde!
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row p-3 p-md-0 my-md-2">
+                                                        <h4 class="accordionCollapse__title">Tuition fee</h4>
+                                                        <div
+                                                            class="col-12 col-md-4 px-md-4 px-2 py-md-0 py-3 tuitionFee__content">
+                                                            <!-- forloop be -->
+                                                            <div class="row rows-cols-1">
+                                                                <div class="col">
+                                                                    <h6>Grade AA</h6>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <p>Rp22.000.000</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row rows-cols-1">
+                                                                <div class="col">
+                                                                    <h6>BPP</h6>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <p>Rp3.500.000</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row rows-cols-1">
+                                                                <div class="col">
+                                                                    <h6>SKS</h6>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <p>Rp250.000</p>
+                                                                </div>
+                                                            </div>
+                                                            <!-- end forloop -->
+                                                        </div>
+                                                        <div
+                                                            class="col-12 col-md-4 px-md-4 px-2 py-md-0 py-3 tuitionFee__content">
+                                                            <div class="row rows-cols-1">
+                                                                <div class="col">
+                                                                    <h6>Grade AA</h6>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <p>Rp22.000.000</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row rows-cols-1">
+                                                                <div class="col">
+                                                                    <h6>BPP</h6>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <p>Rp3.500.000</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row rows-cols-1">
+                                                                <div class="col">
+                                                                    <h6>SKS</h6>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <p>Rp250.000</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="col-12 col-md-4 px-md-4 px-2 py-md-0 py-3 tuitionFee__content">
+                                                            <div class="row rows-cols-1">
+                                                                <div class="col">
+                                                                    <h6>Grade AA</h6>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <p>Rp22.000.000</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row rows-cols-1">
+                                                                <div class="col">
+                                                                    <h6>BPP</h6>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <p>Rp3.500.000</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row rows-cols-1">
+                                                                <div class="col">
+                                                                    <h6>SKS</h6>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <p>Rp250.000</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="button__apply">
+                                                            <button class="btn btn__primary">Apply</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#informationSystems"
+                                                    aria-expanded="false" aria-controls="informationSystems">
+                                                    Information Systems
+                                                </button>
+                                            </h2>
+                                            <div id="informationSystems" class="accordion-collapse collapse"
+                                                aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <strong>This is the second item's accordion body.</strong> It is
+                                                    hidden
+                                                    by default, until the collapse plugin adds the appropriate classes
+                                                    that
+                                                    we use to style each element. These classes control the overall
+                                                    appearance, as well as the showing and hiding via CSS transitions.
+                                                    You
+                                                    can modify any of this with custom CSS or overriding our default
+                                                    variables. It's also worth noting that just about any HTML can go
+                                                    within
+                                                    the <code>.accordion-body</code>, though the transition does limit
+                                                    overflow.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end list menu -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- thumbnail -->
+    <div class="gundarGraduates__join">
+        <div class="join__container">
+            <div class="join__background">
+                <img src="./../../../assets/images/Group 4149.png" />
+            </div>
+            <div class="container">
+                <div class="row justify-content-around align-items-center">
+                    <div class="col-md-8 col-12">
+                        <p>Ready for a simple future?</p>
+                        <p>Start a journey!</p>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <button class="btn primary__button">Start a Journey</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact gunadarma -->
+    <div class="contact__gunadarma">
+        <div class="container">
+            <div class="row row-cols-lg-3 row-cols-1 align-items-start">
+                <div class="col">
+                    <div class="location">
+                        <h5>Locations</h5>
+                        <div class="location__content">
+                            <p>Kampus Depok (Kampus D)</p>
+                            <p>Jln.Margonda Raya No 100 Gd2. Lt2 <br> Pondok Cina, Depok 16424 <br> Jawa Barat -
+                                Indonesia</p>
+                            <a href="#">Kampus Lainnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="link">
+                        <h5>Link</h5>
+                        <div class="link__content">
+                            <ul>
+                                <li>
+                                    <a href="http://staffsite.gunadarma.ac.id/" target="_blank">Staffsite</a>
+                                </li>
+                                <li>
+                                    <a href="https://studentsite.gunadarma.ac.id/" target="_blank">Studensite</a>
+                                </li>
+                                <li>
+                                    <a href="http://career.gunadarma.ac.id/" target="_blank">CareerCenter</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Library
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="email__gundar">
+                            <div class="email__boxImg">
+                                <img src="./../../../assets/images/icons/email.png" alt="">
+                            </div>
+                            <div class="email__content">
+                                <h5>Email</h5>
+                                <p>@Gunadarma.ac.id</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="telephone__gundar">
+                                <div class="telephone__boxImg">
+                                    <img src="./../../../assets/images/icons/phone-call.png" alt="Telephone">
+                                </div>
+                                <div class="telephone__content">
+                                    <h5>Telephone</h5>
+                                    <p>123456789</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p>
+                        <span id="newYear"></span> Copyright Gunadarma University-All rights
+                        reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- boostrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <!-- splide -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+    <!-- splide grid -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.2.0/dist/js/splide-extension-grid.min.js"></script>
+
+
+    <script type="module" src="./../../../assets/scripts/main.js"></script>
+    <script src="./../../../assets/scripts/course.js"></script>
+</body>
+
+</html>

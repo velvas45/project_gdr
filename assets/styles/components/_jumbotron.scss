@@ -130,6 +130,64 @@
     }
 }
 
+// courses
+.jumbotron__courses{
+    background: $Color11;
+
+    .row>*{
+        padding: 0;
+    }
+    
+
+    .jumbotron__breadcrumb, .jumbotron__preview, .jumbotron__button--primary{
+        padding: 40px 50px;
+    }
+
+    .jumbotron__preview{
+        h2{
+            color: $primaryColor;
+            font-size: 40px;
+            font-weight: 500;
+        }
+
+        h5{
+            font-size: 18px;
+        }
+        
+        p{
+            font-size: 15px;
+            text-align: justify;
+        }
+    }
+
+    .jumbotron__button--primary{
+        button{
+            @include primaryButton();
+        }
+    }
+
+    .jumbotron__image-preview{
+        background: ivory;
+        // clip-path: polygon(0% 100%, 98% 100%, 100% 0%, 10% 0%, 0% 75%);
+        clip-path: polygon(0% 100%, 97% 100%, 100% 0%, 26% 0, 0 78%);
+        height: 100%;
+
+        .jumbotron__boxImg{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+            background-color: $Color11;
+
+            img{
+                width: inherit;
+                height: inherit;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
 @media(max-width: 576px){
     .jumbotron{
     margin-top: -12px;
@@ -164,7 +222,7 @@
     }
 
     // student Enrollment
-    .jumbotron__studentEnrollment{
+    .jumbotron__studentEnrollment, .jumbotron__courses{
         .jumbotron__image-preview{
             clip-path:none;
             height: 100%;

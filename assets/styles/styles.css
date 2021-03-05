@@ -136,6 +136,65 @@ html::-webkit-scrollbar {
      object-fit: contain;
 }
 
+.jumbotron__courses {
+  background: #E8E8E8;
+}
+
+.jumbotron__courses .row > * {
+  padding: 0;
+}
+
+.jumbotron__courses .jumbotron__breadcrumb, .jumbotron__courses .jumbotron__preview, .jumbotron__courses .jumbotron__button--primary {
+  padding: 40px 50px;
+}
+
+.jumbotron__courses .jumbotron__preview h2 {
+  color: #885A89;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.jumbotron__courses .jumbotron__preview h5 {
+  font-size: 18px;
+}
+
+.jumbotron__courses .jumbotron__preview p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+.jumbotron__courses .jumbotron__button--primary button {
+  background-color: #EF7B39;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 7px;
+  padding: 10px 40px;
+  margin-right: 20px;
+}
+
+.jumbotron__courses .jumbotron__image-preview {
+  background: ivory;
+  -webkit-clip-path: polygon(0% 100%, 97% 100%, 100% 0%, 26% 0, 0 78%);
+          clip-path: polygon(0% 100%, 97% 100%, 100% 0%, 26% 0, 0 78%);
+  height: 100%;
+}
+
+.jumbotron__courses .jumbotron__image-preview .jumbotron__boxImg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  background-color: #E8E8E8;
+}
+
+.jumbotron__courses .jumbotron__image-preview .jumbotron__boxImg img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 @media (max-width: 576px) {
   .jumbotron {
     margin-top: -12px;
@@ -165,11 +224,24 @@ html::-webkit-scrollbar {
   .jumbotron .jumbotron__content .jumbotron__button .secondary__button {
     padding: 9px;
   }
-  .jumbotron__studentEnrollment .jumbotron__image-preview {
+  .jumbotron__studentEnrollment .jumbotron__image-preview, .jumbotron__courses .jumbotron__image-preview {
     -webkit-clip-path: none;
             clip-path: none;
     height: 100%;
   }
+}
+
+.btn__submit {
+  background: #EF7B39;
+}
+
+.btn__reset {
+  background: #CBCBD5;
+}
+
+.btn__reset, .btn__submit {
+  color: #FFF;
+  border-radius: 35px;
 }
 
 .contact__gunadarma {
@@ -332,11 +404,6 @@ html::-webkit-scrollbar {
   transition: 0.4s;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active__courses, .accordion__course:hover {
-  background-color: #885A89;
-}
-
 /* Style the accordion panel. Note: hidden by default */
 .accordion__courseShow {
   border: 1px solid rgba(0, 0, 0, 0.125);
@@ -394,6 +461,36 @@ html::-webkit-scrollbar {
     width: 100%;
     text-align: center;
   }
+}
+
+.nav-tabs {
+  border: none;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+}
+
+.nav-tabs .nav-link:hover {
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  border: none;
+  font-weight: bold;
+}
+
+.nav-tabs .nav-link.active::after {
+  content: "";
+  display: block;
+  margin-top: 2px;
+  width: 100%;
+  border-radius: 5px;
+  border-bottom: 5px solid #EF7B39;
+}
+
+.tab-content {
+  margin-top: 15px;
 }
 
 header .info-gundar {
@@ -844,18 +941,18 @@ footer {
   }
 }
 
-.shortCourses__header {
+.shortCourses__header, .undergraduateCourse__header {
   margin-top: 20px;
 }
 
-.shortCourses__header h2 {
+.shortCourses__header h2, .undergraduateCourse__header h2 {
   color: #D1B590;
   font-size: 24px;
   font-weight: bold;
   font-family: 'Playfair Display', sans-serif;
 }
 
-.shortCourses__header h2::after {
+.shortCourses__header h2::after, .undergraduateCourse__header h2::after {
   content: "";
   display: block;
   width: 16%;
@@ -863,12 +960,24 @@ footer {
   border-bottom: 2px solid #E3E3E3;
 }
 
-.shortCourses__header h4 {
+@media (max-width: 576px) {
+  .shortCourses__header h2, .undergraduateCourse__header h2 {
+    font-size: 20px;
+  }
+}
+
+.shortCourses__header h4, .undergraduateCourse__header h4 {
   font-size: 32px;
   margin-bottom: 15px;
   font-weight: bold;
   color: #885A89;
   text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+  .shortCourses__header h4, .undergraduateCourse__header h4 {
+    font-size: 24px;
+  }
 }
 
 .swiper-container {
@@ -1038,6 +1147,181 @@ footer {
   margin-right: 20px;
 }
 
+#undergraduateCourse, #postgraduateCourse {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#undergraduateCourse .undergraduateCourse__context, #undergraduateCourse .postgraduateCourse__context, #postgraduateCourse .undergraduateCourse__context, #postgraduateCourse .postgraduateCourse__context {
+  text-align: left;
+}
+
+#undergraduateCourse .undergraduateCourse__context .card .cardBachelor__header, #undergraduateCourse .postgraduateCourse__context .card .cardBachelor__header, #postgraduateCourse .undergraduateCourse__context .card .cardBachelor__header, #postgraduateCourse .postgraduateCourse__context .card .cardBachelor__header {
+  padding: 60px 60px 0;
+}
+
+#undergraduateCourse .undergraduateCourse__context .card .cardBachelor__header h2, #undergraduateCourse .postgraduateCourse__context .card .cardBachelor__header h2, #postgraduateCourse .undergraduateCourse__context .card .cardBachelor__header h2, #postgraduateCourse .postgraduateCourse__context .card .cardBachelor__header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #885A89;
+}
+
+#undergraduateCourse .undergraduateCourse__context .card .cardBachelor__header p, #undergraduateCourse .postgraduateCourse__context .card .cardBachelor__header p, #postgraduateCourse .undergraduateCourse__context .card .cardBachelor__header p, #postgraduateCourse .postgraduateCourse__context .card .cardBachelor__header p {
+  font-size: 16px;
+  color: #CBCBD5;
+  font-weight: 400;
+}
+
+#undergraduateCourse .undergraduateCourse__context .card .cardBachelor__content--1, #undergraduateCourse .postgraduateCourse__context .card .cardBachelor__content--1, #postgraduateCourse .undergraduateCourse__context .card .cardBachelor__content--1, #postgraduateCourse .postgraduateCourse__context .card .cardBachelor__content--1 {
+  padding: 0 60px;
+}
+
+#undergraduateCourse .undergraduateCourse__context .card h4, #undergraduateCourse .postgraduateCourse__context .card h4, #postgraduateCourse .undergraduateCourse__context .card h4, #postgraduateCourse .postgraduateCourse__context .card h4 {
+  font-size: 22px;
+  color: #885A89;
+  font-weight: 500;
+}
+
+#undergraduateCourse .undergraduateCourse__context .card ul, #undergraduateCourse .undergraduateCourse__context .card ol, #undergraduateCourse .postgraduateCourse__context .card ul, #undergraduateCourse .postgraduateCourse__context .card ol, #postgraduateCourse .undergraduateCourse__context .card ul, #postgraduateCourse .undergraduateCourse__context .card ol, #postgraduateCourse .postgraduateCourse__context .card ul, #postgraduateCourse .postgraduateCourse__context .card ol {
+  padding-left: 1rem;
+}
+
+#undergraduateCourse .undergraduateCourse__context .card ul, #undergraduateCourse .postgraduateCourse__context .card ul, #postgraduateCourse .undergraduateCourse__context .card ul, #postgraduateCourse .postgraduateCourse__context .card ul {
+  list-style-type: square;
+}
+
+#undergraduateCourse .undergraduateCourse__context .card ul li, #undergraduateCourse .postgraduateCourse__context .card ul li, #postgraduateCourse .undergraduateCourse__context .card ul li, #postgraduateCourse .postgraduateCourse__context .card ul li {
+  padding-left: 0rem;
+}
+
+#undergraduateCourse .undergraduateCourse__context .card ul li::marker, #undergraduateCourse .postgraduateCourse__context .card ul li::marker, #postgraduateCourse .undergraduateCourse__context .card ul li::marker, #postgraduateCourse .postgraduateCourse__context .card ul li::marker {
+  color: #885A89;
+  font-size: 22px;
+}
+
+#undergraduateCourse .undergraduateCourse__context .card li, #undergraduateCourse .postgraduateCourse__context .card li, #postgraduateCourse .undergraduateCourse__context .card li, #postgraduateCourse .postgraduateCourse__context .card li {
+  font-size: 16px;
+  padding-left: 1rem;
+  text-align: justify;
+}
+
+#undergraduateCourse .undergraduateCourse__context .card .accordion__undergraduate, #undergraduateCourse .postgraduateCourse__context .card .accordion__undergraduate, #postgraduateCourse .undergraduateCourse__context .card .accordion__undergraduate, #postgraduateCourse .postgraduateCourse__context .card .accordion__undergraduate {
+  padding: 0 45px;
+}
+
+#undergraduateCourse .undergraduateCourse__context .card .accordion__undergraduate .important__notice, #undergraduateCourse .postgraduateCourse__context .card .accordion__undergraduate .important__notice, #postgraduateCourse .undergraduateCourse__context .card .accordion__undergraduate .important__notice, #postgraduateCourse .postgraduateCourse__context .card .accordion__undergraduate .important__notice {
+  padding: 20px 80px;
+}
+
+#undergraduateCourse .undergraduateCourse__context .card .accordion__undergraduate .important__notice ul, #undergraduateCourse .postgraduateCourse__context .card .accordion__undergraduate .important__notice ul, #postgraduateCourse .undergraduateCourse__context .card .accordion__undergraduate .important__notice ul, #postgraduateCourse .postgraduateCourse__context .card .accordion__undergraduate .important__notice ul {
+  padding-left: 3rem;
+}
+
+#undergraduateCourse .formSearch select.form-select.form-select-sm, #postgraduateCourse .formSearch select.form-select.form-select-sm {
+  border: none;
+  border-bottom: 1px solid;
+  border-radius: 0;
+  color: #885A89;
+}
+
+#undergraduateCourse .formSearch select.form-select.form-select-sm:focus, #postgraduateCourse .formSearch select.form-select.form-select-sm:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+#undergraduateCourse .formSearch select.form-select.form-select-sm option, #postgraduateCourse .formSearch select.form-select.form-select-sm option {
+  color: #000;
+}
+
+#undergraduateCourse .formSearch select.form-select.form-select-sm option:first-child, #postgraduateCourse .formSearch select.form-select.form-select-sm option:first-child {
+  color: #885A89;
+}
+
+#undergraduateCourse .menuSearch .menuSearch__title, #postgraduateCourse .menuSearch .menuSearch__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+#undergraduateCourse .menuSearch button.accordion-button:not(.collapsed), #postgraduateCourse .menuSearch button.accordion-button:not(.collapsed) {
+  background: #885A89;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#undergraduateCourse .menuSearch button.accordion-button:not(.collapsed):focus, #postgraduateCourse .menuSearch button.accordion-button:not(.collapsed):focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#undergraduateCourse .menuSearch button.accordion-button:not(.collapsed)::after, #postgraduateCourse .menuSearch button.accordion-button:not(.collapsed)::after {
+  color: #FFF;
+}
+
+#undergraduateCourse .menuSearch button.accordion-button.collapsed, #postgraduateCourse .menuSearch button.accordion-button.collapsed {
+  background: #CBCBD5;
+  color: #885A89;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#undergraduateCourse .menuSearch button.accordion-button.collapsed:focus, #postgraduateCourse .menuSearch button.accordion-button.collapsed:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#undergraduateCourse .menuSearch button.accordion-button.collapsed::after, #postgraduateCourse .menuSearch button.accordion-button.collapsed::after {
+  color: blue;
+}
+
+#undergraduateCourse .menuSearch .accordion-collapse .accordionCollapse__title, #postgraduateCourse .menuSearch .accordion-collapse .accordionCollapse__title {
+  color: #885A89;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#undergraduateCourse .menuSearch .accordion-collapse h6, #postgraduateCourse .menuSearch .accordion-collapse h6 {
+  font-weight: 500;
+}
+
+#undergraduateCourse .menuSearch .accordion-collapse .accordionCollapse__courseInformation, #postgraduateCourse .menuSearch .accordion-collapse .accordionCollapse__courseInformation {
+  text-align: justify;
+  font-size: 15px;
+}
+
+#undergraduateCourse .menuSearch .accordion-collapse .tuitionFee__content, #postgraduateCourse .menuSearch .accordion-collapse .tuitionFee__content {
+  position: relative;
+}
+
+#undergraduateCourse .menuSearch .accordion-collapse .tuitionFee__content::after, #postgraduateCourse .menuSearch .accordion-collapse .tuitionFee__content::after {
+  content: "";
+  position: absolute;
+  border-right: 1px solid #CBCBD5;
+  height: 50%;
+  top: 1rem;
+  right: 1rem;
+}
+
+#undergraduateCourse .menuSearch .accordion-collapse .button__apply, #postgraduateCourse .menuSearch .accordion-collapse .button__apply {
+  margin-top: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+#undergraduateCourse .menuSearch .accordion-collapse .button__apply .btn__primary, #postgraduateCourse .menuSearch .accordion-collapse .button__apply .btn__primary {
+  background-color: #EF7B39;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 7px;
+  padding: 10px 40px;
+  margin-right: 20px;
+}
+
 @media (max-width: 576px) {
   .gundarGraduates__join .join__container .container {
     top: 10px;
@@ -1060,6 +1344,57 @@ footer {
   }
   .shortCourses__mainContent .card .shortCourses__mainContent--description p {
     font-size: 14px;
+  }
+  #undergraduateCourse .undergraduateCourse__context .card .cardBachelor__header, #undergraduateCourse .postgraduateCourse__context .card .cardBachelor__header, #postgraduateCourse .undergraduateCourse__context .card .cardBachelor__header, #postgraduateCourse .postgraduateCourse__context .card .cardBachelor__header {
+    padding: 20px;
+  }
+  #undergraduateCourse .undergraduateCourse__context .card .cardBachelor__header h2, #undergraduateCourse .postgraduateCourse__context .card .cardBachelor__header h2, #postgraduateCourse .undergraduateCourse__context .card .cardBachelor__header h2, #postgraduateCourse .postgraduateCourse__context .card .cardBachelor__header h2 {
+    font-size: 22px;
+  }
+  #undergraduateCourse .undergraduateCourse__context .card .cardBachelor__content--1, #undergraduateCourse .postgraduateCourse__context .card .cardBachelor__content--1, #postgraduateCourse .undergraduateCourse__context .card .cardBachelor__content--1, #postgraduateCourse .postgraduateCourse__context .card .cardBachelor__content--1 {
+    padding: 0 20px 0;
+  }
+  #undergraduateCourse .undergraduateCourse__context .card h4, #undergraduateCourse .postgraduateCourse__context .card h4, #postgraduateCourse .undergraduateCourse__context .card h4, #postgraduateCourse .postgraduateCourse__context .card h4 {
+    font-size: 20px;
+    color: #885A89;
+    font-weight: 500;
+  }
+  #undergraduateCourse .undergraduateCourse__context .card ul, #undergraduateCourse .undergraduateCourse__context .card ol, #undergraduateCourse .postgraduateCourse__context .card ul, #undergraduateCourse .postgraduateCourse__context .card ol, #postgraduateCourse .undergraduateCourse__context .card ul, #postgraduateCourse .undergraduateCourse__context .card ol, #postgraduateCourse .postgraduateCourse__context .card ul, #postgraduateCourse .postgraduateCourse__context .card ol {
+    padding-left: .5rem;
+  }
+  #undergraduateCourse .undergraduateCourse__context .card li, #undergraduateCourse .postgraduateCourse__context .card li, #postgraduateCourse .undergraduateCourse__context .card li, #postgraduateCourse .postgraduateCourse__context .card li {
+    font-size: 15px;
+    padding-left: .5rem;
+  }
+  #undergraduateCourse .undergraduateCourse__context .card .accordion__undergraduate, #undergraduateCourse .postgraduateCourse__context .card .accordion__undergraduate, #postgraduateCourse .undergraduateCourse__context .card .accordion__undergraduate, #postgraduateCourse .postgraduateCourse__context .card .accordion__undergraduate {
+    padding: 0 15px;
+  }
+  #undergraduateCourse .undergraduateCourse__context .card .accordion__undergraduate .important__notice, #undergraduateCourse .postgraduateCourse__context .card .accordion__undergraduate .important__notice, #postgraduateCourse .undergraduateCourse__context .card .accordion__undergraduate .important__notice, #postgraduateCourse .postgraduateCourse__context .card .accordion__undergraduate .important__notice {
+    padding: 20px 15px;
+  }
+  #undergraduateCourse .undergraduateCourse__context .card .accordion__undergraduate .important__notice ul, #undergraduateCourse .postgraduateCourse__context .card .accordion__undergraduate .important__notice ul, #postgraduateCourse .undergraduateCourse__context .card .accordion__undergraduate .important__notice ul, #postgraduateCourse .postgraduateCourse__context .card .accordion__undergraduate .important__notice ul {
+    padding-left: 1rem;
+  }
+  #undergraduateCourse .menuSearch button.accordion-button:not(.collapsed), #postgraduateCourse .menuSearch button.accordion-button:not(.collapsed) {
+    font-size: 16px;
+  }
+  #undergraduateCourse .menuSearch button.accordion-button.collapsed, #postgraduateCourse .menuSearch button.accordion-button.collapsed {
+    font-size: 16px;
+  }
+  #undergraduateCourse .menuSearch .accordion-collapse .accordionCollapse__title, #postgraduateCourse .menuSearch .accordion-collapse .accordionCollapse__title {
+    font-size: 16px;
+  }
+  #undergraduateCourse .menuSearch .accordion-collapse h6, #postgraduateCourse .menuSearch .accordion-collapse h6 {
+    font-size: 14px;
+  }
+  #undergraduateCourse .menuSearch .accordion-collapse p, #postgraduateCourse .menuSearch .accordion-collapse p {
+    font-size: 14px;
+  }
+  #undergraduateCourse .menuSearch .accordion-collapse .tuitionFee__content, #postgraduateCourse .menuSearch .accordion-collapse .tuitionFee__content {
+    position: relative;
+  }
+  #undergraduateCourse .menuSearch .accordion-collapse .tuitionFee__content::after, #postgraduateCourse .menuSearch .accordion-collapse .tuitionFee__content::after {
+    display: none;
   }
 }
 
@@ -1089,12 +1424,24 @@ section .interProgram__header h2::after {
   border-bottom: 2px solid #E3E3E3;
 }
 
+@media (max-width: 576px) {
+  section .interProgram__header h2 {
+    font-size: 20px;
+  }
+}
+
 section .interProgram__header h4 {
   font-size: 32px;
   margin-bottom: 15px;
   font-weight: bold;
   color: #885A89;
   text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+  section .interProgram__header h4 {
+    font-size: 24px;
+  }
 }
 
 section .interProgram__context .row {
@@ -1163,12 +1510,24 @@ section .about__header h2::after {
   border-bottom: 2px solid #E3E3E3;
 }
 
+@media (max-width: 576px) {
+  section .about__header h2 {
+    font-size: 20px;
+  }
+}
+
 section .about__header h4 {
   font-size: 32px;
   margin-bottom: 15px;
   font-weight: bold;
   color: #885A89;
   text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+  section .about__header h4 {
+    font-size: 24px;
+  }
 }
 
 section .about__content {
@@ -1216,12 +1575,24 @@ section .lifeGunadarma__header h2::after {
   border-bottom: 2px solid #E3E3E3;
 }
 
+@media (max-width: 576px) {
+  section .lifeGunadarma__header h2 {
+    font-size: 20px;
+  }
+}
+
 section .lifeGunadarma__header h4 {
   font-size: 32px;
   margin-bottom: 15px;
   font-weight: bold;
   color: #885A89;
   text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+  section .lifeGunadarma__header h4 {
+    font-size: 24px;
+  }
 }
 
 section .lifeGunadarma__contents {
@@ -1297,6 +1668,12 @@ section .research__header h2::after {
   border-bottom: 2px solid #E3E3E3;
 }
 
+@media (max-width: 576px) {
+  section .research__header h2 {
+    font-size: 20px;
+  }
+}
+
 section .research__header h4 {
   font-size: 32px;
   margin-bottom: 15px;
@@ -1305,34 +1682,10 @@ section .research__header h4 {
   text-transform: uppercase;
 }
 
-section .research__contents .nav-tabs {
-  border: none;
-}
-
-section .research__contents .nav-tabs .nav-link {
-  border: none;
-}
-
-section .research__contents .nav-tabs .nav-link:hover {
-  border: none;
-}
-
-section .research__contents .nav-tabs .nav-link.active {
-  border: none;
-  font-weight: bold;
-}
-
-section .research__contents .nav-tabs .nav-link.active::after {
-  content: "";
-  display: block;
-  margin-top: 2px;
-  width: 100%;
-  border-radius: 5px;
-  border-bottom: 5px solid #EF7B39;
-}
-
-section .research__contents .tab-content {
-  margin-top: 15px;
+@media (max-width: 576px) {
+  section .research__header h4 {
+    font-size: 24px;
+  }
 }
 
 section .research__contents .card {
@@ -1393,12 +1746,24 @@ section .gundarGraduates__header h2::after {
   border-bottom: 2px solid #E3E3E3;
 }
 
+@media (max-width: 576px) {
+  section .gundarGraduates__header h2 {
+    font-size: 20px;
+  }
+}
+
 section .gundarGraduates__header h4 {
   font-size: 32px;
   margin-bottom: 15px;
   font-weight: bold;
   color: #885A89;
   text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+  section .gundarGraduates__header h4 {
+    font-size: 24px;
+  }
 }
 
 section .gundarGraduates__contents .gundarGraduates__slider {
@@ -1688,12 +2053,24 @@ section .gundarGraduates__join .join__container .container .primary__button {
   border-bottom: 2px solid #E3E3E3;
 }
 
+@media (max-width: 576px) {
+  .applicationManagement .app__header h2 {
+    font-size: 20px;
+  }
+}
+
 .applicationManagement .app__header h4 {
   font-size: 32px;
   margin-bottom: 15px;
   font-weight: bold;
   color: #885A89;
   text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+  .applicationManagement .app__header h4 {
+    font-size: 24px;
+  }
 }
 
 .applicationManagement .app__content {
