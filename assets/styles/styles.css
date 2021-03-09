@@ -941,18 +941,18 @@ footer {
   }
 }
 
-.shortCourses__header, .undergraduateCourse__header {
+.shortCourses__header, .undergraduateCourse__header, .postgraduateCourse__header {
   margin-top: 20px;
 }
 
-.shortCourses__header h2, .undergraduateCourse__header h2 {
+.shortCourses__header h2, .undergraduateCourse__header h2, .postgraduateCourse__header h2 {
   color: #D1B590;
   font-size: 24px;
   font-weight: bold;
   font-family: 'Playfair Display', sans-serif;
 }
 
-.shortCourses__header h2::after, .undergraduateCourse__header h2::after {
+.shortCourses__header h2::after, .undergraduateCourse__header h2::after, .postgraduateCourse__header h2::after {
   content: "";
   display: block;
   width: 16%;
@@ -961,12 +961,12 @@ footer {
 }
 
 @media (max-width: 576px) {
-  .shortCourses__header h2, .undergraduateCourse__header h2 {
+  .shortCourses__header h2, .undergraduateCourse__header h2, .postgraduateCourse__header h2 {
     font-size: 20px;
   }
 }
 
-.shortCourses__header h4, .undergraduateCourse__header h4 {
+.shortCourses__header h4, .undergraduateCourse__header h4, .postgraduateCourse__header h4 {
   font-size: 32px;
   margin-bottom: 15px;
   font-weight: bold;
@@ -975,7 +975,7 @@ footer {
 }
 
 @media (max-width: 576px) {
-  .shortCourses__header h4, .undergraduateCourse__header h4 {
+  .shortCourses__header h4, .undergraduateCourse__header h4, .postgraduateCourse__header h4 {
     font-size: 24px;
   }
 }
