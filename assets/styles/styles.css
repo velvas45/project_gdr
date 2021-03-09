@@ -682,7 +682,7 @@ header .sidebar .sidebar__left .sidebar__menu .accordion-item .accordion-body {
 
 header .sidebar .sidebar__left .sidebar__menu .accordion-item .accordion-button {
   border: none;
-  font-weight: bold;
+  font-weight: 600;
   color: #7E3485;
 }
 
@@ -1081,7 +1081,7 @@ footer {
 }
 
 .shortCourses__context .card .card-body .card-title {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
 }
 
@@ -1400,7 +1400,7 @@ footer {
 
 section {
   width: 90%;
-  margin: 15px auto;
+  margin: 35px auto;
   min-height: 500px;
   text-align: center;
 }
@@ -1467,7 +1467,7 @@ section .interProgram__context .card .card-body {
 }
 
 section .interProgram__context .card .card-body .card-title {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
 }
 
@@ -1938,7 +1938,7 @@ section .gundarGraduates__join .join__container .container .primary__button {
   font-size: 15px;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
   .gunadarma__icons {
     margin-top: -10%;
   }

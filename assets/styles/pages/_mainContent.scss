@@ -1,6 +1,6 @@
 section{
     width: 90%;
-    margin: 15px auto;
+    margin: 35px auto;
     // background-color: burlywood;
     min-height: 500px;
     text-align: center;
@@ -30,7 +30,7 @@ section{
                 transition: 0.4s ease-in-out;
 
                 .card-title{
-                    font-weight: bold;
+                    font-weight: 600;
                     font-size: 18px;
                 }
             }
@@ -437,7 +437,7 @@ section{
     }
 }
 
-@media(min-width:1400px){
+@media(min-width:1600px){
     .gunadarma__icons{
         margin-top: -10%;
     }
