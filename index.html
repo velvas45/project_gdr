@@ -80,6 +80,7 @@
               </div>
               <div class="sidebar__menu">
                 <div class="accordion accordion-flush" id="accordionCourse">
+
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="menuCourse">
                       <button
@@ -142,7 +143,7 @@
 
                             <div class="accordion-item">
                               <a
-                                href="#"
+                                href="./pages/scholarship/list-scholarship.html"
                                 class="accordion-header"
                                 id="scholarships"
                               >
@@ -156,41 +157,19 @@
                             </div>
 
                             <div class="accordion-item">
-                              <h2
+                              <a
+                                href="./pages/how-to-apply/index.html"
                                 class="accordion-header"
                                 id="howToApplyParent"
                               >
                                 <button
-                                  class="accordion-button collapsed accordion__child accordion__subMenu"
+                                  class="accordion-button collapsed"
                                   type="button"
-                                  data-bs-toggle="collapse"
-                                  data-bs-target="#howToApply"
-                                  aria-expanded="false"
-                                  aria-controls="howToApply"
                                 >
                                   How to apply
                                 </button>
-                              </h2>
-                              <div
-                                id="howToApply"
-                                class="accordion-collapse collapse"
-                                aria-labelledby="#howToApply"
-                                data-bs-parent="#howToApplyParent"
-                              >
-                                <div class="accordion-body">
-                                  <ul>
-                                    <li>
-                                      <a href="#">Single Unit Applications</a>
-                                    </li>
-                                    <li>
-                                      <a href="#">Undergraduate Applications</a>
-                                    </li>
-                                    <li>
-                                      <a href="#">Postgraduate Applications</a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
+                              </a>
+                              
                             </div>
 
                             <div class="accordion-item">
@@ -237,11 +216,36 @@
                   </div>
 
                   <div class="accordion-item">
-                    <a href="#" class="accordion-header" id="aboutGunadarma">
-                      <button class="accordion-button collapsed" type="button">
+                    <h2 class="accordion-header" id="aboutGunadarmaHeading">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#aboutGunadarma"
+                      aria-expanded="false"
+                      aria-controls="aboutGunadarma">
                         About Gunadarma
                       </button>
-                    </a>
+                    </h2>
+                    <div
+                      id="aboutGunadarma"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="aboutGunadarmaHeading"
+                      data-bs-parent="#aboutGunadarmaHeading"
+                    >
+                      <div class="accordion-body">
+                        <div class="accordion__child-menu">
+                          <ul>
+                            <li>
+                              <a href="#">About</a>
+                            </li>
+                            <li>
+                              <a href="#">News</a>
+                            </li>
+                            <li>
+                              <a href="#">Event</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="accordion-item">
@@ -282,40 +286,14 @@
                   </div>
 
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="researchHeading">
+                    <a href="#" class="accordion-header" id="researchHeading">
                       <button
                         class="accordion-button collapsed"
                         type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#research"
-                        aria-expanded="false"
-                        aria-controls="research"
                       >
                         Research
                       </button>
-                    </h2>
-                    <div
-                      id="research"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="researchHeading"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        <div class="accordion__child-menu">
-                          <ul>
-                            <li>
-                              <a href="#">Research groups</a>
-                            </li>
-                            <li>
-                              <a href="#">Research and industry</a>
-                            </li>
-                            <li>
-                              <a href="#">Our research response to COVID-19</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+                    </a>
                   </div>
 
                   <div class="accordion-item">
