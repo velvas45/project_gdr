@@ -188,6 +188,29 @@
     }
 }
 
+// jumbotron profile
+.jumbotron__profile{
+    background: $Color11;
+
+    .jumbotron__preview{
+        .jumbotron__imgBx{
+            width: 150px;
+            height: 150px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+
+        .jumbotron__editProfileBtn{
+            background: $Color3;
+            color: $Color7;
+        }
+    }
+}
+
 @media(max-width: 576px){
     .jumbotron{
     margin-top: -12px;
@@ -226,6 +249,20 @@
         .jumbotron__image-preview{
             clip-path:none;
             height: 100%;
+        }
+    }
+
+    .jumbotron__profile{
+    
+        .jumbotron__preview{
+            .jumbotron__imgBx{
+                width: 75px;
+                height: 75px;
+            }
+        }
+
+        .jumbotron__profileContent{
+            padding: .5rem !important;
         }
     }
 }
