@@ -2059,23 +2059,23 @@ section .gundarGraduates__join .join__container .container .primary__button {
   }
 }
 
-.applicationManagement {
+.enrollmentLandingPage {
   text-align: center;
   min-height: 0;
 }
 
-.applicationManagement .app__header {
+.enrollmentLandingPage .app__header {
   margin-top: 20px;
 }
 
-.applicationManagement .app__header h2 {
+.enrollmentLandingPage .app__header h2 {
   color: #D1B590;
   font-size: 24px;
   font-weight: bold;
   font-family: 'Playfair Display', sans-serif;
 }
 
-.applicationManagement .app__header h2::after {
+.enrollmentLandingPage .app__header h2::after {
   content: "";
   display: block;
   width: 16%;
@@ -2084,12 +2084,12 @@ section .gundarGraduates__join .join__container .container .primary__button {
 }
 
 @media (max-width: 576px) {
-  .applicationManagement .app__header h2 {
+  .enrollmentLandingPage .app__header h2 {
     font-size: 20px;
   }
 }
 
-.applicationManagement .app__header h4 {
+.enrollmentLandingPage .app__header h4 {
   font-size: 32px;
   margin-bottom: 15px;
   font-weight: bold;
@@ -2098,43 +2098,60 @@ section .gundarGraduates__join .join__container .container .primary__button {
 }
 
 @media (max-width: 576px) {
-  .applicationManagement .app__header h4 {
+  .enrollmentLandingPage .app__header h4 {
     font-size: 24px;
   }
 }
 
-.applicationManagement .app__content {
+.enrollmentLandingPage .app__content {
   margin-top: 40px;
   text-align: left;
 }
 
-.applicationManagement .app__content .app__table h5 {
-  font-weight: 500;
+.enrollmentLandingPage .app__content .app__stepGuide h6 {
+  font-weight: 600;
 }
 
-.applicationManagement .app__content .app__table .table__app {
-  padding: 8px 16px;
-  width: 100%;
-  background: #885A89;
+.enrollmentLandingPage .app__content .app__stepGuide ul li {
+  list-style: none;
 }
 
-.applicationManagement .app__content .app__table .table__app p {
-  margin: auto;
-  color: #FFF;
-  font-weight: 500;
+.enrollmentLandingPage .app__content .app__stepGuide ul li .app__stepGuide-1, .enrollmentLandingPage .app__content .app__stepGuide ul li .app__stepGuide-2, .enrollmentLandingPage .app__content .app__stepGuide ul li .app__stepGuide-3 {
+  padding-left: 1.5rem;
+  border-left: 1px solid #8AA7A2;
+  padding-bottom: .8rem;
 }
 
-.applicationManagement .app__content .app__table th {
-  font-weight: normal;
+.enrollmentLandingPage .app__content .app__stepGuide ul li .app__stepGuide-1::before, .enrollmentLandingPage .app__content .app__stepGuide ul li .app__stepGuide-2::before, .enrollmentLandingPage .app__content .app__stepGuide ul li .app__stepGuide-3::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #8AA7A2;
+  -webkit-transform: translate(-37px, 0);
+          transform: translate(-37px, 0);
 }
 
-.applicationManagement .app__content .app__table .app__button {
+.enrollmentLandingPage .app__content .app__stepGuide ul li .app__stepGuide-1 h5, .enrollmentLandingPage .app__content .app__stepGuide ul li .app__stepGuide-2 h5, .enrollmentLandingPage .app__content .app__stepGuide ul li .app__stepGuide-3 h5 {
+  margin-top: -2rem;
+  color: #6A6A6A;
+}
+
+.enrollmentLandingPage .app__content .app__stepGuide ul li .app__stepGuide-1 p, .enrollmentLandingPage .app__content .app__stepGuide ul li .app__stepGuide-2 p, .enrollmentLandingPage .app__content .app__stepGuide ul li .app__stepGuide-3 p {
+  margin-bottom: 0;
+}
+
+.enrollmentLandingPage .app__content .app__button {
   margin-top: 20px;
   text-align: center;
   margin-bottom: 30px;
 }
 
-.applicationManagement .app__content .app__table .app__button button {
+.enrollmentLandingPage .app__content .app__button button {
   text-decoration: none;
   background-color: #EF7B39;
   color: #FFF;
@@ -2221,6 +2238,17 @@ section .gundarGraduates__join .join__container .container .primary__button {
   font-weight: bold;
 }
 
+#startNewApp #formFile::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f1c1";
+  position: absolute;
+  z-index: 2;
+  display: block;
+  background-color: #eee;
+  width: 70px;
+  padding: 0 1.75rem;
+}
+
 #startNewApp .app__radioBox {
   padding: 30px 42px;
   background: #F4F4F4;
@@ -2272,10 +2300,19 @@ section .gundarGraduates__join .join__container .container .primary__button {
   border: 1px solid #885A89;
 }
 
+#startNewApp .nav-link::after {
+  content: "";
+  border-bottom: none;
+}
+
 #startNewApp .nav-link.active {
   background-color: #885A89;
   color: #FFF;
   font-weight: 400;
+}
+
+#startNewApp .tab-content {
+  margin-top: 0;
 }
 
 #startNewApp .tab-content .tab-pane {
@@ -2369,6 +2406,35 @@ section .gundarGraduates__join .join__container .container .primary__button {
   content: url("./../images/icons/ic_form.png");
   width: 100%;
   margin-right: 10px;
+}
+
+.nonDegreePermission form select {
+  padding: 0 !important;
+}
+
+.nonDegreePermission form select option {
+  padding: 1.25rem 1rem;
+}
+
+.nonDegreePermission form select option::before {
+  content: "";
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #885A89;
+  margin: 6px 0.75rem 0 0;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+
+.nonDegreePermission form select option:checked {
+  background: #885A89 !important;
+  color: #FFF;
+}
+
+.nonDegreePermission form select option:checked::before {
+  content: "";
+  background: #FFF;
 }
 
 @media (max-width: 576px) {
@@ -3182,7 +3248,7 @@ section .gundarGraduates__join .join__container .container .primary__button {
 
 .edit__profile form .card .card-header .avatar-upload .avatar-edit {
   position: absolute;
-  right: 12px;
+  right: 1.25rem;
   z-index: 1;
   top: 10px;
 }
@@ -3218,7 +3284,7 @@ section .gundarGraduates__join .join__container .container .primary__button {
   font-weight: 900 !important;
   color: #757575;
   position: absolute;
-  top: 10px;
+  top: 7px;
   left: 0;
   right: 0;
   text-align: center;
@@ -3312,5 +3378,475 @@ section .gundarGraduates__join .join__container .container .primary__button {
 .edit__profile form .btn__group .btn__save {
   background: #EF7B39;
   color: #FFF;
+}
+
+#research {
+  text-align: center;
+}
+
+#research .research__header {
+  margin-top: 20px;
+}
+
+#research .research__header h2 {
+  color: #D1B590;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+#research .research__header h2::after {
+  content: "";
+  display: block;
+  width: 16%;
+  margin: 20px auto;
+  border-bottom: 2px solid #E3E3E3;
+}
+
+@media (max-width: 576px) {
+  #research .research__header h2 {
+    font-size: 20px;
+  }
+}
+
+#research .research__header h4 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #885A89;
+  text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+  #research .research__header h4 {
+    font-size: 24px;
+  }
+}
+
+#research .research__mainContext {
+  padding: 0 2rem;
+  text-align: justify;
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+#research .research__subContext .card {
+  border-radius: 20px;
+  margin: 5px 0;
+  -webkit-box-shadow: 2px 2px 2px #000;
+          box-shadow: 2px 2px 2px #000;
+}
+
+#research .research__subContext .card .research__boxImg {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+#research .research__subContext .card .research__boxImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#research .research__subContext .card .research__content {
+  padding: 20px;
+  text-align: left;
+}
+
+#research .research__subContext .card .research__content h3 {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+#research .research__subContext .card .research__content p {
+  font-size: 14px;
+  text-align: justify;
+}
+
+#research .research__subContext .card .research__content a {
+  color: #EF7B39;
+}
+
+#alumni {
+  text-align: center;
+}
+
+#alumni .alumni__header {
+  margin-top: 20px;
+}
+
+#alumni .alumni__header h2 {
+  color: #D1B590;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+#alumni .alumni__header h2::after {
+  content: "";
+  display: block;
+  width: 16%;
+  margin: 20px auto;
+  border-bottom: 2px solid #E3E3E3;
+}
+
+@media (max-width: 576px) {
+  #alumni .alumni__header h2 {
+    font-size: 20px;
+  }
+}
+
+#alumni .alumni__header h4 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #885A89;
+  text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+  #alumni .alumni__header h4 {
+    font-size: 24px;
+  }
+}
+
+#alumni .alumni__mainContext {
+  text-align: left;
+  padding: 1.5rem;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+#alumni .alumni__carouselContext .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+#alumni .alumni__carouselContext .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  padding: 2.5rem 3rem;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#alumni .alumni__carouselContext .swiper-button-prev, #alumni .alumni__carouselContext .swiper-button-next {
+  border-radius: 50%;
+  padding: 1rem;
+  width: 1rem;
+  height: 1rem;
+  background: #EF7B39;
+}
+
+#alumni .alumni__carouselContext .swiper-button-prev::after, #alumni .alumni__carouselContext .swiper-button-next::after {
+  font-size: 1.5rem;
+  color: #FFF;
+}
+
+#alumni .alumni__carouselContext .swiper-button-prev.swiper-button-disabled, #alumni .alumni__carouselContext .swiper-button-next.swiper-button-disabled {
+  background: #F4F4F4;
+}
+
+#alumni .alumni__carouselContext .card {
+  padding: 2rem;
+  -webkit-box-shadow: 2px 2px 5px #000;
+          box-shadow: 2px 2px 5px #000;
+}
+
+#alumni .alumni__carouselContext .card .alumni__boxImg {
+  width: 250px;
+  height: 250px;
+}
+
+#alumni .alumni__carouselContext .card .alumni__boxImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+#alumni .alumni__carouselContext .card .alumni__profileContent .alumni__quotes {
+  font-size: 26px;
+  text-align: justify;
+}
+
+#alumni .alumni__carouselContext .card .alumni__profile {
+  text-align: left;
+}
+
+#alumni .alumni__carouselContext .card .alumni__profile h5 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #885A89;
+}
+
+#alumni .alumni__carouselContext .card .alumni__profile h6 {
+  font-weight: normal;
+  color: #6E6E6E;
+}
+
+.alumni__thumbnail {
+  background: #885A89;
+  padding: 1rem 2rem;
+}
+
+.alumni__thumbnail .alumni__thumbnail-left {
+  padding: 2rem 3rem;
+}
+
+.alumni__thumbnail .alumni__thumbnail-left h5 {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.alumni__thumbnail .alumni__thumbnail-left h5 span {
+  color: #D1B590;
+}
+
+.alumni__thumbnail .alumni__thumbnail-left .alumni__thumbnailBtn a {
+  background: #EF7B39;
+  color: #FFF;
+}
+
+.alumni__thumbnail .alumni__thumbnail-right {
+  padding: 0;
+  padding-bottom: 5rem;
+  margin: 0;
+}
+
+.alumni__thumbnail .alumni__thumbnail-right .alumni__imgBx {
+  padding-left: 2rem;
+  width: 100%;
+  height: 100%;
+  border-bottom: 6px dashed #FFF;
+  border-left: 6px dashed #FFF;
+}
+
+.alumni__thumbnail .alumni__thumbnail-right .alumni__imgBx img {
+  margin-left: 1rem;
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.alumni__testimonial {
+  text-align: center;
+}
+
+.alumni__testimonial .alumni__testimonialHeader {
+  margin-top: 20px;
+}
+
+.alumni__testimonial .alumni__testimonialHeader h2 {
+  color: #D1B590;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+.alumni__testimonial .alumni__testimonialHeader h2::after {
+  content: "";
+  display: block;
+  width: 16%;
+  margin: 20px auto;
+  border-bottom: 2px solid #E3E3E3;
+}
+
+@media (max-width: 576px) {
+  .alumni__testimonial .alumni__testimonialHeader h2 {
+    font-size: 20px;
+  }
+}
+
+.alumni__testimonial .alumni__testimonialHeader h4 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #885A89;
+  text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+  .alumni__testimonial .alumni__testimonialHeader h4 {
+    font-size: 24px;
+  }
+}
+
+.alumni__testimonial .alumni__testimonialSlider .swiper-container-2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.alumni__testimonial .alumni__testimonialSlider .swiper-container-2 .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  padding: 10px 0;
+}
+
+.alumni__testimonial .alumni__testimonialSlider .swiper-container-2 .swiper-slide .card {
+  text-align: center;
+  border-radius: 12px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.alumni__testimonial .alumni__testimonialSlider .swiper-container-2 .swiper-slide .card .card__boxImg {
+  width: 120px;
+  height: 120px;
+  margin: 20px auto;
+}
+
+.alumni__testimonial .alumni__testimonialSlider .swiper-container-2 .swiper-slide .card .card__boxImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.alumni__testimonial .alumni__testimonialSlider .swiper-container-2 .swiper-slide .card .card-title {
+  color: #071c4d;
+  font-size: 20px;
+}
+
+.alumni__testimonial .alumni__testimonialSlider .swiper-container-2 .swiper-slide .card .card-text {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.alumni__testimonial .alumni__testimonialSlider .swiper-container-2 .swiper-slide .card .card__course {
+  margin: 40px 0 0 0;
+}
+
+.alumni__testimonial .alumni__testimonialSlider .swiper-button-prev, .alumni__testimonial .alumni__testimonialSlider .swiper-button-next {
+  border-radius: 50%;
+  padding: 1rem;
+  width: 1rem;
+  height: 1rem;
+  background: #EF7B39;
+  margin: 0 17rem;
+}
+
+.alumni__testimonial .alumni__testimonialSlider .swiper-button-prev::after, .alumni__testimonial .alumni__testimonialSlider .swiper-button-next::after {
+  font-size: 1.5rem;
+  color: #FFF;
+}
+
+.alumni__testimonial .alumni__testimonialSlider .swiper-button-prev.swiper-button-disabled, .alumni__testimonial .alumni__testimonialSlider .swiper-button-next.swiper-button-disabled {
+  background: #F4F4F4;
+}
+
+@media (max-width: 992px) {
+  #alumni .alumni__carouselContext .card {
+    -webkit-box-shadow: 0 2px 2px #000;
+            box-shadow: 0 2px 2px #000;
+  }
+  #alumni .alumni__carouselContext .card .alumni__boxImg {
+    margin: 0 auto;
+    width: 125px;
+    height: 125px;
+  }
+  #alumni .alumni__carouselContext .card .alumni__profileContent .alumni__quotes {
+    font-size: 22px;
+  }
+  #alumni .alumni__carouselContext .card .alumni__profile h5, #alumni .alumni__carouselContext .card .alumni__profile h6 {
+    font-size: 18px;
+  }
+  .alumni__thumbnail {
+    background: #885A89;
+    padding: 1rem 2rem;
+  }
+  .alumni__thumbnail .alumni__thumbnail-left {
+    padding: 2rem 3rem;
+  }
+  .alumni__thumbnail .alumni__thumbnail-left h5 {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+  }
+  .alumni__thumbnail .alumni__thumbnail-left h5 span {
+    color: #D1B590;
+  }
+  .alumni__thumbnail .alumni__thumbnail-left .alumni__thumbnailBtn a {
+    background: #EF7B39;
+    color: #FFF;
+  }
+  .alumni__thumbnail .alumni__thumbnail-right {
+    padding-bottom: 0;
+  }
+  .alumni__thumbnail .alumni__thumbnail-right .alumni__imgBx {
+    border: none;
+  }
+  .alumni__thumbnail .alumni__thumbnail-right .alumni__imgBx img {
+    margin-left: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .alumni__testimonial {
+    text-align: center;
+  }
+  .alumni__testimonial .alumni__testimonialHeader {
+    margin-top: 20px;
+  }
+  .alumni__testimonial .alumni__testimonialHeader h2 {
+    color: #D1B590;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Playfair Display', sans-serif;
+  }
+  .alumni__testimonial .alumni__testimonialHeader h2::after {
+    content: "";
+    display: block;
+    width: 16%;
+    margin: 20px auto;
+    border-bottom: 2px solid #E3E3E3;
+  }
+}
+
+@media (max-width: 992px) and (max-width: 576px) {
+  .alumni__testimonial .alumni__testimonialHeader h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .alumni__testimonial .alumni__testimonialHeader h4 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #885A89;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 992px) and (max-width: 576px) {
+  .alumni__testimonial .alumni__testimonialHeader h4 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  .alumni__testimonial .alumni__testimonialSlider .swiper-container-2 .swiper-slide {
+    padding: 10px 1rem;
+  }
+  .alumni__testimonial .alumni__testimonialSlider .swiper-button-prev, .alumni__testimonial .alumni__testimonialSlider .swiper-button-next {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

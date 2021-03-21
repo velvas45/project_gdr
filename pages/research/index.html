@@ -10,9 +10,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
 
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-
     <link rel="stylesheet" href="./../../assets/styles/styles.css" />
 </head>
 
@@ -26,7 +23,7 @@
                     <span class="nav-bar__menu-1" id="sidebarCall">Menu</span>
                 </li>
                 <li class="nav-bar__menu">
-                    <img src="./../../assets/images/logo-gundar.png" alt="Gunadarma" />
+                    <img src="./../../../assets/images/logo-gundar.png" alt="Gunadarma" />
                 </li>
                 <li class="nav-bar__menu">
                     <div class="nav-bar__numberInfo">
@@ -52,7 +49,7 @@
                             <button type="button" class="btn-close" aria-label="Close"></button>
                         </div>
                         <div class="sidebar__logo">
-                            <img src="./../../assets/images/logo-gundar.png" alt="gunadarma" />
+                            <img src="./assets/images/logo-gundar.png" alt="gunadarma" />
                         </div>
                         <div class="sidebar__menu">
                             <div class="accordion accordion-flush" id="accordionCourse">
@@ -246,37 +243,102 @@
     </header>
 
     <!-- jumbotron -->
-    <div class="jumbotron__profile">
-        <div class="container-fluid p-5">
+    <div class="jumbotron__courses">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
-                    <div class="jumbotron__breadcrumb mb-3">
+                <div class="col-md-8 col-12">
+                    <div class="jumbotron__breadcrumb">
                         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="./../../../index.html">Home</a></li>
-                                <li class="breadcrumb-item" aria-current="page">Student Enrollment</li>
-                                <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                                <li class="breadcrumb-item active" aria-current="page">Research</li>
                             </ol>
                         </nav>
                     </div>
-                    <div class="jumbotron__preview py-3 mt-3">
-                        <div class="row row-cols-md-2 row-cols-1 gy-3 justify-content-between align-items-center">
-                            <div class="col">
-                                <div class="d-flex align-items-center">
-                                    <div class="jumbotron__imgBx">
-                                        <img src="./../../assets/images/img-profile.png" alt="profile">
-                                    </div>
-                                    <div class="jumbotron__profileContent px-4">
-                                        <h4>Hello..</h4>
-                                        <h4>Anggie Febi Yaditha</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2 offset-md-4">
-                                <a href="./edit-profile.html" class="btn jumbotron__editProfileBtn d-block mx-auto">
-                                    Edit Profile
-                                </a>
-                            </div>
+                    <div class="jumbotron__preview">
+                        <h2>Research</h2>
+                        <h5>Premium. Proven. Loved. Study at Gunadarma</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa corrupti voluptas vel
+                            quisquam illum voluptate quod impedit ab nisi, esse mollitia ad aliquid delectus ea sit
+                            autem officiis. Reprehenderit, tenetur!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="jumbotron__image-preview">
+                        <div class="jumbotron__boxImg">
+                            <img src="./../../../assets/images/gundar-preview.png" alt="Gunadarma Preview">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- icons -->
+    <div class="icons">
+        <div class="icons__header">
+            <h5>Premium. Proven. Loved. Study at Gunadarma</h5>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center">
+                <div class="col">
+                    <div class="gunadarma__icon">
+                        <div class="iconBox">
+                            <img src="./../../../assets/images/icons/medal.png" alt="medal" />
+                        </div>
+                        <div class="content">
+                            <p>Best Private University</p>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+                                corrupti molestias commodi, ut amet quas quisquam neque facere
+                                ullam, recusandae quam nemo quo, adipisci iure possimus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gunadarma__icon">
+                        <div class="iconBox">
+                            <img src="./../../../assets/images/icons/mortarboard.png" alt="medal" />
+                        </div>
+                        <div class="content">
+                            <p>High Achieving Graduates</p>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+                                corrupti molestias commodi, ut amet quas quisquam neque facere
+                                ullam, recusandae quam nemo quo, adipisci iure possimus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gunadarma__icon">
+                        <div class="iconBox">
+                            <img src="./../../../assets/images/icons/online-course.png" alt="medal" />
+                        </div>
+                        <div class="content">
+                            <p>Online Learning</p>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+                                corrupti molestias commodi, ut amet quas quisquam neque facere
+                                ullam, recusandae quam nemo quo, adipisci iure possimus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gunadarma__icon">
+                        <div class="iconBox">
+                            <img src="./../../../assets/images/icons/stats (1).png" alt="medal" />
+                        </div>
+                        <div class="content">
+                            <p>Student Satisfaction</p>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+                                corrupti molestias commodi, ut amet quas quisquam neque facere
+                                ullam.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -286,161 +348,153 @@
 
     <!-- main content -->
     <main>
-        <div class="container edit__profile py-4">
-            <h4>USER PROFILE</h4>
-
-            <form>
-                <div class="row g-3">
-                    <div class="col-12 col-md-4">
-                        <div class="card">
-                            <div class="card-header">
-                                <div class="avatar-upload">
-                                    <div class="avatar-edit">
-                                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-                                        <label for="imageUpload"></label>
+        <div class="container-fluid">
+            <div id="research" class="p-2">
+                <div class="research__header">
+                    <h2>International Programs</h2>
+                    <h4>RESEARCH</h4>
+                </div>
+                <div class="research__mainContext">
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet.
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet.
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                    </p>
+                </div>
+                <div class="research__subContext mt-4">
+                    <div class="container-fluid">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="research-group-tab" data-bs-toggle="tab"
+                                    data-bs-target="#research-group" type="button" role="tab"
+                                    aria-controls="research-group" aria-selected="true">
+                                    Research Group
+                                </button>
+                                <button class="nav-link" id="research-industry-tab" data-bs-toggle="tab"
+                                    data-bs-target="#research-industry" type="button" role="tab"
+                                    aria-controls="research-industry" aria-selected="false">
+                                    Research and Industry
+                                </button>
+                                <button class="nav-link" id="responses-covid-tab" data-bs-toggle="tab"
+                                    data-bs-target="#responses-covid" type="button" role="tab"
+                                    aria-controls="responses-covid" aria-selected="false">
+                                    Responses COVID-19
+                                </button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="research-group" role="tabpanel"
+                                aria-labelledby="research-group-tab">
+                                <div class="container-fluid">
+                                    <div class="card">
+                                        <div class="row row-cols-md-2 align-items-center">
+                                            <div class="col-md-5">
+                                                <div class="research__boxImg">
+                                                    <img src="./../../assets/images/Mask Group 10.png" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="research__content">
+                                                    <h3>
+                                                        The Importance of Implementing Social Distancing to
+                                                        Prevent COVID-19
+                                                    </h3>
+                                                    <p>
+                                                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                        elit. Saepe et blanditiis quia earum alias quisquam,
+                                                        molestias totam consectetur illo similique aliquam
+                                                        quidem illum consequatur nobis repudiandae sapiente,
+                                                        fuga veritatis. Minima.
+                                                    </p>
+                                                    <a href="#">Read More...</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="avatar-preview">
-                                        <div id="imagePreview"
-                                            style="background-image: url(http://i.pravatar.cc/500?img=7);">
+                                    <div class="card">
+                                        <div class="row row-cols-md-2 align-items-center">
+                                            <div class="col-md-7">
+                                                <div class="research__content">
+                                                    <h3>
+                                                        The Importance of Implementing Social Distancing to
+                                                        Prevent COVID-19
+                                                    </h3>
+                                                    <p>
+                                                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                        elit. Saepe et blanditiis quia earum alias quisquam,
+                                                        molestias totam consectetur illo similique aliquam
+                                                        quidem illum consequatur nobis repudiandae sapiente,
+                                                        fuga veritatis. Minima.
+                                                    </p>
+                                                    <a href="#">Read More...</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="research__boxImg">
+                                                    <img src="./../../assets/images/Mask Group 13.png" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="row row-cols-md-2 align-items-center">
+                                            <div class="col-md-5">
+                                                <div class="research__boxImg">
+                                                    <img src="./../../assets/images/Mask Group 11.png" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="research__content">
+                                                    <h3>
+                                                        The Importance of Implementing Social Distancing to
+                                                        Prevent COVID-19
+                                                    </h3>
+                                                    <p>
+                                                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                        elit. Saepe et blanditiis quia earum alias quisquam,
+                                                        molestias totam consectetur illo similique aliquam
+                                                        quidem illum consequatur nobis repudiandae sapiente,
+                                                        fuga veritatis. Minima.
+                                                    </p>
+                                                    <a href="#">Read More...</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-body text-center">
-                                <h3>Anggie Febi Yaditha</h3>
+                            <div class="tab-pane fade" id="research-industry" role="tabpanel"
+                                aria-labelledby="research-industry-tab">
+                                Research and Industry
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-8 profile__content">
-                        <div class="card p-3">
-                            <h5>Details</h5>
-                            <div class="card-body">
-                                <div class="mb-3">
-                                    <label for="name" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Anggie Febi Yaditha"
-                                        name="name">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" disabled class="form-control" id="email"
-                                        placeholder="anggie123@gmail.com">
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <label for="date" class="form-label">DD/MM/YYYY</label>
-                                        <input type="date" class="form-control" id="date" name="date">
-                                    </div>
-                                    <div class="col">
-                                        <label for="gender" class="form-label">Gender</label>
-                                        <div class="mb-3">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="gender" id="female"
-                                                    value="option1">
-                                                <label class="form-check-label" for="female">Female</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="gender" id="male"
-                                                    value="option2">
-                                                <label class="form-check-label" for="male">Male</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="tab-pane fade" id="responses-covid" role="tabpanel"
+                                aria-labelledby="responses-covid-tab">
+                                Responses COVID-19
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row g-3 mt-2">
-                    <div class="col-12 col-md-5 profile__content">
-                        <div class="card p-3">
-                            <h5>Change Password</h5>
-                            <div class="card-body">
-                                <div class="mb-3">
-                                    <label for="password" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="password" value="testing"
-                                        name="password">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="confirmPass" class="form-label">Confirm Password</label>
-                                    <input type="password" class="form-control" id="confirmPass" value="testing">
-                                </div>
-                                <div class="row noted">
-                                    <h6>Note:</h6>
-                                    <p>Must be at least 8 characters long, uppercase,
-                                        lowercase, and numbers</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-7 profile__content">
-                        <div class="card p-3">
-                            <h5>Contact</h5>
-                            <div class="card-body">
-                                <div class="row row-cols-1 row-cols-md-2">
-                                    <div class="col">
-                                        <div class="mb-3">
-                                            <label for="numberPhone" class="form-label">Mobile Number</label>
-                                            <div class="input-group mb-3">
-                                                <button class="btn btn-outline-secondary dropdown-toggle btn__dropdown"
-                                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="23.222"
-                                                        height="16.188" viewBox="0 0 23.222 16.188">
-                                                        <g id="indonesia" transform="translate(-12 -27.751)">
-                                                            <path id="Path_1906" data-name="Path 1906"
-                                                                d="M12,27.751H35.222V43.939H12Z" fill="#d60a2e" />
-                                                            <path id="Path_1907" data-name="Path 1907"
-                                                                d="M12,64H35.222v8.094H12Z"
-                                                                transform="translate(0 -28.155)" fill="#f0f0f0" />
-                                                        </g>
-                                                    </svg>
-
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                    <li>
-                                                        <hr class="dropdown-divider">
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
-                                                </ul>
-                                                <input type="tel" name="tel1" maxlength="3" minlength="3" value="+62"
-                                                    size="3" disabled class="text-center" />
-                                                <input type="tel" class="form-control">
-                                            </div>
-
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="nationality" class="form-label">Nationality</label>
-                                            <input type="text" class="form-control" id="nationality"
-                                                placeholder="Indonesia">
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="mb-3">
-                                            <label for="address">Address</label>
-                                            <textarea class="form-control"
-                                            Kota Bogor" id="address" style="height: 130px">
-                                            Villa Bogor Indah blok EE 
-                                            3 no 9, Bogor Utara, 16157
-                                            </textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center text-center mt-3 btn__group">
-                    <div class="d-inline-block">
-                        <input type="button" class="btn btn__cancel" value="Cancel">
-                        <input type="submit" class="btn btn__save" value="Save changes">
-                    </div>
-                </div>
-            </form>
+            </div>
         </div>
-
     </main>
+
 
     <!-- contact gunadarma -->
     <div class="contact__gunadarma">
@@ -484,7 +538,7 @@
                     <div class="row">
                         <div class="email__gundar">
                             <div class="email__boxImg">
-                                <img src="./../../assets/images/icons/email.png" alt="">
+                                <img src="./../../../assets/images/icons/email.png" alt="">
                             </div>
                             <div class="email__content">
                                 <h5>Email</h5>
@@ -494,7 +548,7 @@
                         <div class="row">
                             <div class="telephone__gundar">
                                 <div class="telephone__boxImg">
-                                    <img src="./../../assets/images/icons/phone-call.png" alt="Telephone">
+                                    <img src="./../../../assets/images/icons/phone-call.png" alt="Telephone">
                                 </div>
                                 <div class="telephone__content">
                                     <h5>Telephone</h5>
@@ -526,27 +580,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-    <script type="module" src="./../../assets/scripts/main.js"></script>
-    <script src="./../../assets/scripts/course.js"></script>
-    <script>
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function (e) {
-                    $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
-                    $('#imagePreview').hide();
-                    $('#imagePreview').fadeIn(650);
-                }
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-        $("#imageUpload").change(function () {
-            readURL(this);
-        });
-    </script>
+    <script type="module" src="./../../../assets/scripts/main.js"></script>
+    <script src="./../../../assets/scripts/course.js"></script>
 </body>
 
 </html>

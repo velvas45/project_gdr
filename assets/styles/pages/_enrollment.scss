@@ -1,4 +1,4 @@
-.applicationManagement{
+.enrollmentLandingPage{
     text-align: center;
     min-height: 0;
 
@@ -9,42 +9,56 @@
     .app__content{
         margin-top: 40px;
         text-align: left;
-        
-        .app__table{
-            h5{
-                font-weight: 500;
+        .app__stepGuide{
+            h6{
+                font-weight: 600;
             }
-
-            .table__app{
-                padding: 8px 16px;
-                width: 100%;
-                background: $primaryColor;
-
-                p{
-                    margin: auto;
-                    color: $Color7;
-                    font-weight: 500;
-                }
-
-
-            }
-
-            th{
-                font-weight: normal;
-            }
-
-            .app__button{
-                margin-top: 20px;
-                text-align: center;
-                margin-bottom: 30px;
-
-                button{
-                    text-decoration: none;
-                    @include primaryButton();
+            ul{
+                li{
+                    list-style: none;
+                    
+                    .app__stepGuide-1,.app__stepGuide-2,.app__stepGuide-3{
+                        padding-left: 1.5rem;
+                        border-left: 1px solid $Color2;
+                        padding-bottom: .8rem;
+                        // position: relative;
+    
+                        &::before{
+                            content: "";
+                            display: inline-block;
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 50%;
+                            position: relative;
+                            top: 0;
+                            left: 0;
+                            background: $Color2;
+                            transform: translate(-37px, 0);
+                        }
+    
+                        h5{
+                            margin-top: -2rem;
+                            color: $Color8;
+                        }
+    
+                        p{
+                            margin-bottom: 0;
+                        }
+                    }
                 }
             }
         }
+        
+        .app__button{
+            margin-top: 20px;
+            text-align: center;
+            margin-bottom: 30px;
 
+            button{
+                text-decoration: none;
+                @include primaryButton();
+            }
+        }
     }
 
 
@@ -112,6 +126,17 @@
         }
     }
 
+    #formFile::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f1c1";
+        position: absolute;
+        z-index: 2;
+        display: block;
+        background-color: #eee;
+        width: 70px;
+        padding: 0 1.75rem;
+    }
+
     .app__radioBox{
         padding: 30px 42px;
         background: $Color6;
@@ -157,6 +182,13 @@
         }
     }
 
+    .nav-link{
+        &::after{
+            content: "";
+            border-bottom: none;
+        }
+    }
+
     .nav-link.active{
         background-color: $primaryColor;
         color: $Color7;
@@ -164,6 +196,7 @@
     }
 
     .tab-content{
+        margin-top: 0;
         .tab-pane{
             border-radius: 8px;
             padding: 30px;
@@ -281,6 +314,38 @@
                 margin-right: 10px;   
                 // height: 100%;
                 // background-image: url($urlIcon1);
+            }
+        }
+    }
+}
+
+.nonDegreePermission{
+    form{
+        select{
+            padding: 0 !important;
+
+            option{
+                padding: 1.25rem 1rem;
+    
+                &::before{
+                    content: "";
+                    width: 0.75rem;
+                    height: 0.75rem;
+                    background-color: $primaryColor;
+                    margin: 6px 0.75rem 0 0;
+                    display: inline-block;
+                    border-radius: 50%;
+                    border: 1px solid grey;
+                }
+            }
+            option:checked{
+                background: $primaryColor !important;
+                color: $Color7;
+
+                &::before{
+                    content: "";
+                    background: $Color7;
+                }
             }
         }
     }
