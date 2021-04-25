@@ -523,6 +523,255 @@ html::-webkit-scrollbar {
   margin-top: 15px;
 }
 
+.tableApplication .app__table .table__app {
+  background: #885A89;
+  padding: 8px 0 2px 8px;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.tableApplication .app__table .table thead {
+  background: #F4F4F4;
+}
+
+.tableApplication .app__table .table tbody {
+  vertical-align: middle;
+}
+
+.tableApplication .app__table .table tbody .first__td {
+  color: #7E3485;
+}
+
+.tableApplication .app__table .table tbody .btn__editAction {
+  background: #EF7B39;
+  color: #FFF;
+  padding: 6px 20px;
+}
+
+.circleProfile {
+  margin-top: 50px;
+}
+
+.circleProfile .circleProfile__header {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.circleProfile .circleProfile__body .circleProfile__boxImg {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+.circleProfile .circleProfile__body .circleProfile__boxImg .circleProfile__image {
+  height: 100%;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center right;
+     object-position: center right;
+}
+
+.circleProfile .circleProfile__body .circleProfile__title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.circleProfile .circleProfile__body .circleProfile__mainBody {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.cardVideo, .cardVideoReverse {
+  margin: 16px 0;
+}
+
+.cardVideo .cardVideo__header, .cardVideoReverse .cardVideo__header {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.cardVideo .cardVideo__contentLeft, .cardVideoReverse .cardVideo__contentLeft {
+  text-align: justify;
+  font-size: 16px;
+}
+
+.cardVideo .cardVideo__contentRight .cardVideo__contentBox, .cardVideoReverse .cardVideo__contentRight .cardVideo__contentBox {
+  max-width: 600px;
+  height: 250px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cardVideo .cardVideo__contentRight .cardVideo__contentBox .cardVideo__content, .cardVideoReverse .cardVideo__contentRight .cardVideo__contentBox .cardVideo__content {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.cardVideoReverse .row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.videoContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.videoContent .youtube__content {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.thumbnailGundar {
+  background: #885A89;
+  min-height: 350px;
+  margin: 50px 0;
+}
+
+.thumbnailGundar .thumbnailGundar-left {
+  padding: 2rem 5rem;
+}
+
+.thumbnailGundar .thumbnailGundar-left h5 {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.thumbnailGundar .thumbnailGundar-left h5 span {
+  color: #D1B590;
+}
+
+.thumbnailGundar .thumbnailGundar-left .thumbnailGundarBtn a {
+  background: #EF7B39;
+  color: #FFF;
+}
+
+.thumbnailGundar .thumbnailGundar-right {
+  border-bottom: 6px dashed #FFF;
+  border-left: 6px dashed #FFF;
+}
+
+.thumbnailGundar .thumbnailGundar-right .thumbnailGundar__imgBx {
+  padding-right: 1rem;
+}
+
+.thumbnailGundar .thumbnailGundar-right .thumbnailGundar__imgBx img {
+  -webkit-transform: translateY(3rem);
+          transform: translateY(3rem);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (max-width: 992px) {
+  .thumbnailGundar .thumbnailGundar-right {
+    padding-bottom: 20px;
+    border: none;
+  }
+  .thumbnailGundar .thumbnailGundar-right .thumbnailGundar__imgBx {
+    padding: 0;
+    text-align: center;
+  }
+  .thumbnailGundar .thumbnailGundar-right .thumbnailGundar__imgBx img {
+    width: 80%;
+    height: 60%;
+    margin-left: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .thumbnailGundar .thumbnailGundar-left {
+    text-align: center;
+  }
+  .thumbnailGundar .thumbnailGundar-left br {
+    display: none;
+  }
+  .thumbnailGundar .thumbnailGundar-left h5 {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+  }
+  .thumbnailGundar .thumbnailGundar-left h5 span {
+    color: #D1B590;
+  }
+  .thumbnailGundar .thumbnailGundar-left .thumbnailGundarBtn a {
+    background: #EF7B39;
+    color: #FFF;
+  }
+  .thumbnailGundar .thumbnailGundar-right {
+    padding-bottom: 8px;
+    border: none;
+  }
+  .thumbnailGundar .thumbnailGundar-right .thumbnailGundar__imgBx {
+    padding: 0;
+  }
+  .thumbnailGundar .thumbnailGundar-right .thumbnailGundar__imgBx img {
+    margin-left: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.customCard__contents {
+  margin-top: 30px;
+}
+
+.customCard__contents .card {
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 1px 6px #000;
+          box-shadow: 2px 1px 6px #000;
+}
+
+.customCard__contents .card .customCard__boxImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.customCard__contents .card .customCard__boxImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.customCard__contents .card .customCard__content {
+  width: 80%;
+  margin: 50px auto 0;
+  line-height: 2rem;
+  text-align: right;
+}
+
+.customCard__contents .card .customCard__content h2 {
+  text-align: center;
+  color: #000;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.customCard__contents .card .customCard__content p {
+  text-align: justify;
+  font-size: 16px;
+}
+
 header .info-gundar {
   background: #885A89;
   padding: 22px 80px 22px 0;
@@ -3149,6 +3398,10 @@ section .gundarGraduates__join .join__container .container .primary__button {
   }
 }
 
+#profile .profile__context {
+  text-align: left;
+}
+
 #profile .event {
   text-align: left;
 }
@@ -3597,55 +3850,6 @@ section .gundarGraduates__join .join__container .container .primary__button {
   color: #6E6E6E;
 }
 
-.alumni__thumbnail {
-  background: #885A89;
-  padding: 1rem 2rem;
-}
-
-.alumni__thumbnail .alumni__thumbnail-left {
-  padding: 2rem 3rem;
-}
-
-.alumni__thumbnail .alumni__thumbnail-left h5 {
-  color: #FFF;
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 1.25rem;
-}
-
-.alumni__thumbnail .alumni__thumbnail-left h5 span {
-  color: #D1B590;
-}
-
-.alumni__thumbnail .alumni__thumbnail-left .alumni__thumbnailBtn a {
-  background: #EF7B39;
-  color: #FFF;
-}
-
-.alumni__thumbnail .alumni__thumbnail-right {
-  padding: 0;
-  padding-bottom: 5rem;
-  margin: 0;
-}
-
-.alumni__thumbnail .alumni__thumbnail-right .alumni__imgBx {
-  padding-left: 2rem;
-  width: 100%;
-  height: 100%;
-  border-bottom: 6px dashed #FFF;
-  border-left: 6px dashed #FFF;
-}
-
-.alumni__thumbnail .alumni__thumbnail-right .alumni__imgBx img {
-  margin-left: 1rem;
-  -webkit-transform: translateY(5rem);
-          transform: translateY(5rem);
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .alumni__testimonial {
   text-align: center;
 }
@@ -3848,5 +4052,348 @@ section .gundarGraduates__join .join__container .container .primary__button {
   .alumni__testimonial .alumni__testimonialSlider .swiper-button-prev, .alumni__testimonial .alumni__testimonialSlider .swiper-button-next {
     display: none;
   }
+}
+
+#profile {
+  text-align: center;
+}
+
+#profile .profile__header {
+  margin-top: 20px;
+}
+
+#profile .profile__header h2 {
+  color: #D1B590;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+#profile .profile__header h2::after {
+  content: "";
+  display: block;
+  width: 16%;
+  margin: 20px auto;
+  border-bottom: 2px solid #E3E3E3;
+}
+
+@media (max-width: 576px) {
+  #profile .profile__header h2 {
+    font-size: 20px;
+  }
+}
+
+#profile .profile__header h4 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #885A89;
+  text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+  #profile .profile__header h4 {
+    font-size: 24px;
+  }
+}
+
+#profile .profile__context {
+  text-align: left;
+}
+
+#profile .event {
+  text-align: left;
+}
+
+#profile .event .event__contents .card {
+  border-radius: 20px;
+  margin: 5px 0;
+  -webkit-box-shadow: 2px 2px 2px #000;
+          box-shadow: 2px 2px 2px #000;
+}
+
+#profile .event .event__contents .card .event__boxImg {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+#profile .event .event__contents .card .event__boxImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#profile .event .event__contents .card .event__content {
+  padding: 20px;
+}
+
+#profile .event .event__contents .card .event__content h3 {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+#profile .event .event__contents .card .event__content p {
+  font-size: 14px;
+  text-align: justify;
+}
+
+#profile .event .event__contents .card .event__content a {
+  color: #EF7B39;
+}
+
+.latestNews__profile {
+  background: #FFF;
+}
+
+.latestNews__profile .latestNews__header {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.latestNews__profile .latestNews__content .latestNews__col--header h6 {
+  color: #885A89;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.latestNews__profile .latestNews__content .latestNews__col--header p {
+  font-weight: 400;
+  color: #000;
+  font-size: 14px;
+}
+
+.latestNews__profile .latestNews__content p {
+  font-size: 12px;
+  color: #6A6A6A;
+}
+
+.latestNews__profile .latestNews__content a {
+  font-size: 12px;
+  color: #EF7B39;
+}
+
+.latestNews__profile .latestNews__content .col:first-child {
+  border-right: 1px solid #B5B5B5;
+}
+
+.edit__profile h4 {
+  color: #885A89;
+}
+
+.edit__profile .card {
+  border-bottom: 4px solid #885A89;
+  min-height: 430px;
+}
+
+.edit__profile form .card .card-header {
+  border-bottom: none;
+}
+
+.edit__profile form .card .card-header .avatar-upload {
+  position: relative;
+  max-width: 205px;
+  margin: 50px auto;
+}
+
+.edit__profile form .card .card-header .avatar-upload .avatar-edit {
+  position: absolute;
+  right: 1.25rem;
+  z-index: 1;
+  top: 10px;
+}
+
+.edit__profile form .card .card-header .avatar-upload .avatar-edit input {
+  display: none;
+}
+
+.edit__profile form .card .card-header .avatar-upload .avatar-edit input + label {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 0;
+  border-radius: 100%;
+  background: #FFFFFF;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.edit__profile form .card .card-header .avatar-upload .avatar-edit input + label:hover {
+  background: #f1f1f1;
+  border-color: #d6d6d6;
+}
+
+.edit__profile form .card .card-header .avatar-upload .avatar-edit input + label:after {
+  font-family: 'Font Awesome\ 5 Free' !important;
+  content: "\f083" !important;
+  font-weight: 900 !important;
+  color: #757575;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+}
+
+.edit__profile form .card .card-header .avatar-upload .avatar-preview {
+  width: 192px;
+  height: 192px;
+  position: relative;
+  border-radius: 100%;
+  border: 6px solid #F8F8F8;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.edit__profile form .card .card-header .avatar-upload .avatar-preview > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.edit__profile form .profile__content h5 {
+  color: #885A89;
+}
+
+.edit__profile form .profile__content .card-body input, .edit__profile form .profile__content .card-body textarea {
+  border: none;
+  border-bottom: 1px solid #F4F4F4;
+}
+
+.edit__profile form .profile__content .card-body input:disabled, .edit__profile form .profile__content .card-body textarea:disabled {
+  border: 1px solid #3b3b3b;
+}
+
+.edit__profile form .profile__content .card-body input:hover, .edit__profile form .profile__content .card-body input:focus, .edit__profile form .profile__content .card-body textarea:hover, .edit__profile form .profile__content .card-body textarea:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.edit__profile form .profile__content .card-body input[type="radio"] {
+  border: 1px solid #6A6A6A;
+}
+
+.edit__profile form .profile__content .card-body input[type="tel"] {
+  border: none;
+  border-bottom: 1px solid #F4F4F4;
+}
+
+.edit__profile form .profile__content .card-body input[type="tel"]:disabled {
+  background: transparent;
+}
+
+.edit__profile form .profile__content .card-body label {
+  font-size: 12px;
+  font-weight: 300;
+  color: #6A6A6A;
+}
+
+.edit__profile form .profile__content .card-body .btn__dropdown {
+  border: none;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.edit__profile form .profile__content .card-body .btn__dropdown:hover, .edit__profile form .profile__content .card-body .btn__dropdown:focus {
+  background: transparent;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.edit__profile form .profile__content .card-body .noted h6 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.edit__profile form .profile__content .card-body .noted p {
+  font-size: 14px;
+}
+
+.edit__profile form .btn__group .btn__cancel {
+  background: #F4F4F4;
+  color: #EF7B39;
+}
+
+.edit__profile form .btn__group .btn__save {
+  background: #EF7B39;
+  color: #FFF;
+}
+
+#whyStudy, #lifeStudent, #graduation {
+  margin: 0;
+}
+
+#whyStudy .whyStudy__header, #whyStudy .lifeStudent__header, #whyStudy .graduation__header, #lifeStudent .whyStudy__header, #lifeStudent .lifeStudent__header, #lifeStudent .graduation__header, #graduation .whyStudy__header, #graduation .lifeStudent__header, #graduation .graduation__header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#whyStudy .whyStudy__header h2, #whyStudy .lifeStudent__header h2, #whyStudy .graduation__header h2, #lifeStudent .whyStudy__header h2, #lifeStudent .lifeStudent__header h2, #lifeStudent .graduation__header h2, #graduation .whyStudy__header h2, #graduation .lifeStudent__header h2, #graduation .graduation__header h2 {
+  color: #D1B590;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+#whyStudy .whyStudy__header h2::after, #whyStudy .lifeStudent__header h2::after, #whyStudy .graduation__header h2::after, #lifeStudent .whyStudy__header h2::after, #lifeStudent .lifeStudent__header h2::after, #lifeStudent .graduation__header h2::after, #graduation .whyStudy__header h2::after, #graduation .lifeStudent__header h2::after, #graduation .graduation__header h2::after {
+  content: "";
+  display: block;
+  width: 16%;
+  margin: 20px auto;
+  border-bottom: 2px solid #E3E3E3;
+}
+
+@media (max-width: 576px) {
+  #whyStudy .whyStudy__header h2, #whyStudy .lifeStudent__header h2, #whyStudy .graduation__header h2, #lifeStudent .whyStudy__header h2, #lifeStudent .lifeStudent__header h2, #lifeStudent .graduation__header h2, #graduation .whyStudy__header h2, #graduation .lifeStudent__header h2, #graduation .graduation__header h2 {
+    font-size: 20px;
+  }
+}
+
+#whyStudy .whyStudy__header h4, #whyStudy .lifeStudent__header h4, #whyStudy .graduation__header h4, #lifeStudent .whyStudy__header h4, #lifeStudent .lifeStudent__header h4, #lifeStudent .graduation__header h4, #graduation .whyStudy__header h4, #graduation .lifeStudent__header h4, #graduation .graduation__header h4 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #885A89;
+  text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+  #whyStudy .whyStudy__header h4, #whyStudy .lifeStudent__header h4, #whyStudy .graduation__header h4, #lifeStudent .whyStudy__header h4, #lifeStudent .lifeStudent__header h4, #lifeStudent .graduation__header h4, #graduation .whyStudy__header h4, #graduation .lifeStudent__header h4, #graduation .graduation__header h4 {
+    font-size: 24px;
+  }
+}
+
+#whyStudy .whyStudy__info .whyStudy__info--header > h5 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#whyStudy .whyStudy__info .whyStudy__info--body > p {
+  font-size: 16px;
+  text-align: ju;
+}
+
+#lifeStudent .infoCard .infoCard__header {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+}
+
+#lifeStudent .infoCard .infoCard__body {
+  font-size: 16px;
+  text-align: justify;
 }
 /*# sourceMappingURL=styles.css.map */
