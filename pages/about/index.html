@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gunadarma University</title>
+
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./../../assets/styles/styles.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- navigation bar -->
+        <div class="nav-bar">
+            <ul class="nav-bar__menus">
+                <li class="nav-bar__menu" id="sidebar_menu">
+                    <span class="nav-bar__menu-1" id="sidebarCall">Menu</span>
+                </li>
+                <li class="nav-bar__menu">
+                    <img src="./../../../assets/images/logo-gundar.png" alt="Gunadarma" />
+                </li>
+                <li class="nav-bar__menu">
+                    <div class="nav-bar__numberInfo">
+                        <p>Telephone</p>
+                        <p>123456</p>
+                    </div>
+                </li>
+                <li class="nav-bar__menu">
+                    <div class="nav-bar__addresInfo">
+                        <p>Address</p>
+                        <p>Jl. Margonda raya, Depok</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-12 sidebar__left">
+                        <div class="sidebar__closeBtn">
+                            <button type="button" class="btn-close" aria-label="Close"></button>
+                        </div>
+                        <div class="sidebar__logo">
+                            <img src="./../../assets/images/logo-gundar.png" alt="gunadarma" />
+                        </div>
+                        <div class="sidebar__menu">
+                            <div class="accordion accordion-flush" id="accordionCourse">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="menuCourse">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#course" aria-expanded="false"
+                                            aria-controls="course">
+                                            Courses
+                                        </button>
+                                    </h2>
+                                    <div id="course" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                        data-bs-parent="#accordionCourse">
+                                        <div class="accordion-body">
+                                            <div class="list-menu">
+                                                <div class="accordion__child-menu">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="findCourseParent">
+                                                            <button class="accordion-button collapsed accordion__child"
+                                                                type="button" data-bs-toggle="collapse"
+                                                                data-bs-target="#findCourse" aria-expanded="false"
+                                                                aria-controls="findCourse">
+                                                                Find a course
+                                                            </button>
+                                                        </h2>
+                                                        <div id="findCourse"
+                                                            class="accordion-collapse collapse accordion__show"
+                                                            aria-labelledby="findCourse"
+                                                            data-bs-parent="#findCourseParent">
+                                                            <div class="accordion-body">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">Short Courses</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Undergraduate Courses</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Postgraduate Courses</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="accordion-item">
+                                                        <a href="#" class="accordion-header" id="scholarships">
+                                                            <button class="accordion-button collapsed" type="button">
+                                                                Scholarships
+                                                            </button>
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="howToApplyParent">
+                                                            <button
+                                                                class="accordion-button collapsed accordion__child accordion__subMenu"
+                                                                type="button" data-bs-toggle="collapse"
+                                                                data-bs-target="#howToApply" aria-expanded="false"
+                                                                aria-controls="howToApply">
+                                                                How to apply
+                                                            </button>
+                                                        </h2>
+                                                        <div id="howToApply" class="accordion-collapse collapse"
+                                                            aria-labelledby="#howToApply"
+                                                            data-bs-parent="#howToApplyParent">
+                                                            <div class="accordion-body">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">Single Unit Applications</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Undergraduate Applications</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">Postgraduate Applications</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="accordion-item">
+                                                        <a href="#" class="accordion-header" id="keyDates">
+                                                            <button class="accordion-button collapsed" type="button">
+                                                                Key Dates
+                                                            </button>
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="accordion-item">
+                                                        <a href="./pages/enrollment/student-enrollment.html"
+                                                            class="accordion-header" id="scholarships">
+                                                            <button class="accordion-button collapsed" type="button">
+                                                                Student Enrollment
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <a href="#" class="accordion-header" id="location">
+                                        <button class="accordion-button collapsed" type="button">
+                                            Location
+                                        </button>
+                                    </a>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <a href="#" class="accordion-header" id="aboutGunadarma">
+                                        <button class="accordion-button collapsed" type="button">
+                                            About Gunadarma
+                                        </button>
+                                    </a>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="lifeGunadarmaHeading">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#lifeGunadarma"
+                                            aria-expanded="false" aria-controls="lifeGunadarma">
+                                            Life at gunadarma
+                                        </button>
+                                    </h2>
+                                    <div id="lifeGunadarma" class="accordion-collapse collapse"
+                                        aria-labelledby="lifeGunadarmaHeading" data-bs-parent="#lifeGunadarmaHeading">
+                                        <div class="accordion-body">
+                                            <div class="accordion__child-menu">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Why study at Gunadarma</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Student life</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Graduations</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="researchHeading">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#research" aria-expanded="false"
+                                            aria-controls="research">
+                                            Research
+                                        </button>
+                                    </h2>
+                                    <div id="research" class="accordion-collapse collapse"
+                                        aria-labelledby="researchHeading" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="accordion__child-menu">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Research groups</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Research and industry</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Our research response to COVID-19</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <a href="#" class="accordion-header" id="alumni">
+                                        <button class="accordion-button collapsed" type="button">
+                                            Alumni
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-0 d-none d-lg-block sidebar__right"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- jumbotron -->
+    <div class="jumbotron__courses">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-12">
+                    <div class="jumbotron__breadcrumb">
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="./../../../index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">About Gunadarma</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="jumbotron__preview">
+                        <h2>About Gunadarma</h2>
+                        <h5>Premium. Proven. Loved. Study at Gunadarma</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa corrupti voluptas vel
+                            quisquam illum voluptate quod impedit ab nisi, esse mollitia ad aliquid delectus ea sit
+                            autem officiis. Reprehenderit, tenetur!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="jumbotron__image-preview">
+                        <div class="jumbotron__boxImg">
+                            <img src="./../../../assets/images/gundar-preview.png" alt="Gunadarma Preview">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- icons -->
+    <div class="icons">
+        <div class="icons__header">
+            <h5>Premium. Proven. Loved. Study at Gunadarma</h5>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center">
+                <div class="col">
+                    <div class="gunadarma__icon">
+                        <div class="iconBox">
+                            <img src="./../../../assets/images/icons/medal.png" alt="medal" />
+                        </div>
+                        <div class="content">
+                            <p>Best Private University</p>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+                                corrupti molestias commodi, ut amet quas quisquam neque facere
+                                ullam, recusandae quam nemo quo, adipisci iure possimus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gunadarma__icon">
+                        <div class="iconBox">
+                            <img src="./../../../assets/images/icons/mortarboard.png" alt="medal" />
+                        </div>
+                        <div class="content">
+                            <p>High Achieving Graduates</p>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+                                corrupti molestias commodi, ut amet quas quisquam neque facere
+                                ullam, recusandae quam nemo quo, adipisci iure possimus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gunadarma__icon">
+                        <div class="iconBox">
+                            <img src="./../../../assets/images/icons/online-course.png" alt="medal" />
+                        </div>
+                        <div class="content">
+                            <p>Online Learning</p>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+                                corrupti molestias commodi, ut amet quas quisquam neque facere
+                                ullam, recusandae quam nemo quo, adipisci iure possimus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="gunadarma__icon">
+                        <div class="iconBox">
+                            <img src="./../../../assets/images/icons/stats (1).png" alt="medal" />
+                        </div>
+                        <div class="content">
+                            <p>Student Satisfaction</p>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+                                corrupti molestias commodi, ut amet quas quisquam neque facere
+                                ullam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main content --> 
+    <main>
+        <div class="container-fluid">
+            <div id="aboutGundar" class="p-2">
+                <div class="aboutGundar__header">
+                    <h2>International Programs</h2>
+                    <h4>About Gunadarma</h4>
+                </div>
+                <div class="aboutGundar__body">
+                    <div class="container">
+                    <div class="row row-cols-md-2 row-cols-1 g-lg-0 align-items-center">
+                        <div class="col">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquam ad distinctio voluptatibus autem. Asperiores, dolor. Distinctio sunt repudiandae maiores facilis perspiciatis, iusto minima repellat laborum. Sapiente ullam sint placeat.
+                            Libero quia recusandae asperiores. Laborum ad alias possimus explicabo eum illum fugit omnis rerum sed quasi velit aliquid ipsa provident ab delectus, culpa, libero ex, dignissimos dolorum? Incidunt, velit repellat.
+                            Animi pariatur deleniti eum laboriosam, tempore omnis accusamus eius ab hic quae error natus sint repudiandae, nesciunt assumenda nisi adipisci rem commodi consequatur dignissimos atque ut! Laudantium quidem exercitationem libero!
+                        </p>
+                        </div>
+                        <div class="col">
+                        <div class="aboutGundar__boxImg">
+                            <img src="./../../assets/images/pict.png" alt="Gunadarma" />
+                        </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloribus sunt tempore, quidem maiores porro expedita iste, quis ipsum, possimus saepe consectetur corporis temporibus reprehenderit cupiditate ducimus laboriosam optio voluptates.
+                                Iusto sunt rem aut commodi facilis in sit, officiis odio asperiores! Sapiente suscipit sequi consequuntur nam nulla illum possimus! Consequuntur consectetur quod ea, hic obcaecati totam alias quasi quam amet?
+                                Quos ipsa iure totam, architecto minima ullam ut! Debitis placeat corrupti in explicabo asperiores, doloremque aut, aliquam, eius vitae error tempore aperiam ea reprehenderit impedit officia minus voluptatem eligendi! Animi?
+                                Debitis architecto modi, placeat perferendis quo optio. Facilis ad aspernatur impedit nulla magni ex, molestias omnis sint, dolorum aperiam facere, fugiat nostrum nisi consequatur ipsa in! Aperiam accusantium distinctio earum?
+                                Magni unde ad eveniet voluptates doloribus obcaecati nisi alias, explicabo beatae quasi commodi nihil quaerat enim quidem quisquam sunt reiciendis repellendus atque saepe quos ea laudantium. Esse animi sequi veniam!
+                                Amet repudiandae voluptas, quidem sunt blanditiis harum quaerat nesciunt dicta aut maiores ducimus sed saepe neque officia, cum eaque dolor mollitia esse sint distinctio explicabo. Aspernatur debitis expedita esse eum.
+                                Temporibus beatae similique minima voluptatum, animi dolorem, deleniti ea laborum fugiat odio, sint sapiente nam suscipit blanditiis. Animi incidunt corporis at veniam natus blanditiis eligendi error iure necessitatibus. Ratione, ullam.
+                                Ad, voluptate iste numquam qui quae magnam odio molestiae consectetur perferendis explicabo quo porro minus, ipsum, repellat illum? Expedita aut hic nesciunt voluptatibus quis unde reiciendis. Debitis, facere quas? Aspernatur!
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- main content news  -->
+    <main>
+        <div class="container">
+            <div id="aboutGundarNews" class="p-2">
+                <div class="aboutGundarNews__header">
+                    <h2>International Programs</h2>
+                    <h4>News</h4>
+                </div>
+
+                <div class="aboutGundarNews__body">
+                    <!-- looping di BE -->
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center gx-2">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card__header">
+                                    <img class="card-img-top" src="./../../assets/images/newsImages.png">
+                                </div>
+                                <div class="card-body">
+                                    <h5>Lorem ipsum, dolor sit amet consectetur.</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur placeat repudiandae, exercitationem nam, deleniti excepturi magni eos cumque, sapiente ea quis repellat mollitia corporis magnam quod commodi voluptatibus sed? Quam.</p>
+                                    <a href="#">Read More...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card__header">
+                                    <img class="card-img-top" src="./../../assets/images/newsImages.png">
+                                </div>
+                                <div class="card-body">
+                                    <h5>Lorem ipsum, dolor sit amet consectetur.</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur placeat repudiandae, exercitationem nam, deleniti excepturi magni eos cumque, sapiente ea quis repellat mollitia corporis magnam quod commodi voluptatibus sed? Quam.</p>
+                                    <a href="#">Read More...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card__header">
+                                    <img class="card-img-top" src="./../../assets/images/newsImages.png">
+                                </div>
+                                <div class="card-body">
+                                    <h5>Lorem ipsum, dolor sit amet consectetur.</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur placeat repudiandae, exercitationem nam, deleniti excepturi magni eos cumque, sapiente ea quis repellat mollitia corporis magnam quod commodi voluptatibus sed? Quam.</p>
+                                    <a href="#">Read More...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main content event -->
+    <main>
+        <div class="container">
+            <div id="aboutGundarEvent" class="p-2">
+                <div class="aboutGundarEvent__header">
+                    <h2>International Programs</h2>
+                    <h4>Event</h4>
+                </div>
+
+                <div class="aboutGundarEvent__body">
+                    <!-- looping di BE -->
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center gx-2">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card__header">
+                                    <img class="card-img-top" src="./../../assets/images/newsImages.png">
+                                </div>
+                                <div class="card-body">
+                                    <h5>Lorem ipsum, dolor sit amet consectetur.</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur placeat repudiandae, exercitationem nam, deleniti excepturi magni eos cumque, sapiente ea quis repellat mollitia corporis magnam quod commodi voluptatibus sed? Quam.</p>
+                                    <a href="#">Read More...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card__header">
+                                    <img class="card-img-top" src="./../../assets/images/newsImages.png">
+                                </div>
+                                <div class="card-body">
+                                    <h5>Lorem ipsum, dolor sit amet consectetur.</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur placeat repudiandae, exercitationem nam, deleniti excepturi magni eos cumque, sapiente ea quis repellat mollitia corporis magnam quod commodi voluptatibus sed? Quam.</p>
+                                    <a href="#">Read More...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card__header">
+                                    <img class="card-img-top" src="./../../assets/images/newsImages.png">
+                                </div>
+                                <div class="card-body">
+                                    <h5>Lorem ipsum, dolor sit amet consectetur.</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur placeat repudiandae, exercitationem nam, deleniti excepturi magni eos cumque, sapiente ea quis repellat mollitia corporis magnam quod commodi voluptatibus sed? Quam.</p>
+                                    <a href="#">Read More...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- thumbnail -->
+    <div class="gundarGraduates__join">
+        <div class="join__container">
+            <div class="join__background">
+                <img src="./../../../assets/images/Group 4149.png" />
+            </div>
+            <div class="container">
+                <div class="row justify-content-around align-items-center">
+                    <div class="col-md-8 col-12">
+                        <p>Ready for a simple future?</p>
+                        <p>Start a journey!</p>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <button class="btn primary__button">Start a Journey</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- contact gunadarma -->
+    <div class="contact__gunadarma">
+        <div class="container">
+            <div class="row row-cols-lg-3 row-cols-1 align-items-start">
+                <div class="col">
+                    <div class="location">
+                        <h5>Locations</h5>
+                        <div class="location__content">
+                            <p>Kampus Depok (Kampus D)</p>
+                            <p>Jln.Margonda Raya No 100 Gd2. Lt2 <br> Pondok Cina, Depok 16424 <br> Jawa Barat -
+                                Indonesia</p>
+                            <a href="#">Kampus Lainnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="link">
+                        <h5>Link</h5>
+                        <div class="link__content">
+                            <ul>
+                                <li>
+                                    <a href="http://staffsite.gunadarma.ac.id/" target="_blank">Staffsite</a>
+                                </li>
+                                <li>
+                                    <a href="https://studentsite.gunadarma.ac.id/" target="_blank">Studensite</a>
+                                </li>
+                                <li>
+                                    <a href="http://career.gunadarma.ac.id/" target="_blank">CareerCenter</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Library
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="email__gundar">
+                            <div class="email__boxImg">
+                                <img src="./../../../assets/images/icons/email.png" alt="">
+                            </div>
+                            <div class="email__content">
+                                <h5>Email</h5>
+                                <p>@Gunadarma.ac.id</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="telephone__gundar">
+                                <div class="telephone__boxImg">
+                                    <img src="./../../../assets/images/icons/phone-call.png" alt="Telephone">
+                                </div>
+                                <div class="telephone__content">
+                                    <h5>Telephone</h5>
+                                    <p>123456789</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p>
+                        <span id="newYear"></span> Copyright Gunadarma University-All rights
+                        reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- boostrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <script type="module" src="./../../../assets/scripts/main.js"></script>
+    <script src="./../../../assets/scripts/course.js"></script>
+</body>
+
+</html>
