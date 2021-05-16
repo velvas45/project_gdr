@@ -6,18 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gunadarma University</title>
 
-    <!-- swiper css -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-
     <!-- boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
-    <link rel="stylesheet" href="./../../assets/styles/styles.css" />
+    <link rel="stylesheet" href="./../../../assets/styles/styles.css" />
 </head>
 
 <body>
@@ -258,13 +252,13 @@
                         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="./../../../index.html">Home</a></li>
-                                <li class="breadcrumb-item"><a href="./../../../index.html">About Gunadarma</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">News</li>
+                                <li class="breadcrumb-item"><a href="./../../../index.html">Courses</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Key Dates</li>
                             </ol>
                         </nav>
                     </div>
                     <div class="jumbotron__preview">
-                        <h2>News</h2>
+                        <h2>Key Dates</h2>
                         <h5>Premium. Proven. Loved. Study at Gunadarma</h5>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa corrupti voluptas vel
                             quisquam illum voluptate quod impedit ab nisi, esse mollitia ad aliquid delectus ea sit
@@ -354,150 +348,243 @@
         </div>
     </div>
 
-    <!-- sama struktur cuma beda title dan disini dinamis datanya -->
     <!-- main content -->
     <main>
         <div class="container-fluid">
-            <div id="news" class="p-2">
-                <div class="news__header">
+            <div id="keyDates" class="p-2">
+                <div class="keyDates__header">
                     <h2>International Programs</h2>
-                    <h4>News</h4>
+                    <h4>KEY DATES</h4>
                 </div>
-                <div class="news__body">
+                <div class="keyDates__contents">
                     <div class="container">
-                        <!-- looping for more news -->
-                        <!-- Swiper -->
-                        <div class="swiper-container swiperNews">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="row contentNews">
-                                        <div class="col">
-                                            <div class="newsContent__boxImage">
-                                                <img src="./../../assets/images/imageNews.png" alt="">
-                                            </div>
-                                            <div class="newsContent__body">
-                                                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae sunt maxime ex id voluptas repellat porro eaque, atque aspernatur voluptatem, non earum. Consequatur perspiciatis cumque quis repellat, vel odio. Fuga.</p>
-
-                                                <a href="#">Read more...</a>
+                        <div class="keyDates__body">
+                            <div class="keyDates__content">
+                                <div class="keyDates__content__header">
+                                    <h5>Application Dates</h5>
+                                    <p>We have a number of different study periods. Most courses are offered through our
+                                        trimester study system. With three trimesters, the next intake is never far
+                                        away.</p>
+                                    <p>Applications are generally open during the following periods (including non-award
+                                        and incoming cross institutional applications), but not all courses are open at
+                                        each application intake. Please check the relevant course page for full details.
+                                    </p>
+                                </div>
+                                <div class="tableApplication my-5">
+                                    <div class="app__content">
+                                        <div class="container">
+                                            <div class="row align-items-center p-0">
+                                                <div class="col">
+                                                    <div class="app__table">
+                                                        <div class="table__app">
+                                                            <p>Application Dates</p>
+                                                        </div>
+                                                        <div class="table-responsive">
+                                                            <table class="table text-center">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col">Study Period</th>
+                                                                        <th scope="col">Application Open</th>
+                                                                        <th scope="col">Application Close</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <!-- <tr>
+                                                <td colspan="5">You have not yet started an
+                                                    application using this account.</td>
+                                            </tr> -->
+                                                                    <tr>
+                                                                        <td class="first__td">Trimester 1, 2021</td>
+                                                                        <td>Closed</td>
+                                                                        <td>17/02/2021</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="first__td">Trimester 2, 2021</td>
+                                                                        <td>Now Open</td>
+                                                                        <td>27/06/2021</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="first__td">Trimester 3, 2021</td>
+                                                                        <td>Now Open</td>
+                                                                        <td>11/09/2021</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="row contentNews">
-                                    <div class="col">
-                                        <div class="newsContent__boxImage">
-                                            <img src="./../../assets/images/imageNews.png" alt="">
-                                        </div>
-                                        <div class="newsContent__body">
-                                            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae sunt maxime ex id voluptas repellat porro eaque, atque aspernatur voluptatem, non earum. Consequatur perspiciatis cumque quis repellat, vel odio. Fuga.</p>
-
-                                            <a href="#">Read more...</a>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-
                             </div>
-                            <!-- Add Pagination -->
-                            <div class="swiper-pagination"></div>
-                            <!-- end looping -->
+                            <div class="keyDates__content">
+                                <div class="keyDates__content__header">
+                                    <h5>Study periods</h5>
+                                    <p>Most of our courses and units are studied in our trimester study schedule. To give you an idea of when you’d be studying, an outline of the upcoming trimester dates is below.
+                                    </p>
+                                </div>
+                                <!-- table looping sejumlah db di trimester berada -->
+                                <div class="tableApplication my-5">
+                                    <div class="app__content">
+                                        <div class="container">
+                                            <div class="row align-items-center p-0">
+                                                <div class="col">
+                                                    <div class="app__table">
+                                                        <div class="table__app">
+                                                            <p>Trimester 1, 2021</p>
+                                                        </div>
+                                                        <div class="table-responsive">
+                                                            <table class="table text-center">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col">Activities</th>
+                                                                        <th scope="col">Dates</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <!-- looping data from db -->
+                                                                    <tr>
+                                                                        <td class="first__td">Orientation week – all students</td>
+                                                                        <td>Monday 1 March-Friday 5 March</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="first__td">11 teaching period begins</td>
+                                                                        <td>Monday 8 March</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="first__td">11 teaching period ends</td>
+                                                                        <td>Friday 28 May</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="first__td">Exams Begin</td>
+                                                                        <td>Monday 7 June</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="first__td">Exams End</td>
+                                                                        <td>Friday 18 June</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="first__td">11 results released</td>
+                                                                        <td>Thursday 8 July</td>
+                                                                    </tr>
+                                                                    <!-- end looping -->
+
+                                                                    <!-- check jika key actives, application open, else if application close, else coming soon  -->
+                                                                    <tr>
+                                                                        <td class="bg-light" colspan="2">Applications now closed </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tableApplication my-5">
+                                    <div class="app__content">
+                                        <div class="container">
+                                            <div class="row align-items-center p-0">
+                                                <div class="col">
+                                                    <div class="app__table">
+                                                        <div class="table__app">
+                                                            <p>Trimester 2, 2021</p>
+                                                        </div>
+                                                        <div class="table-responsive">
+                                                            <table class="table text-center">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col">Activities</th>
+                                                                        <th scope="col">Dates</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <!-- looping data from db -->
+                                                                    <tr>
+                                                                        <td class="first__td">Orientation week – all students</td>
+                                                                        <td>Monday 1 March-Friday 5 March</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="first__td">11 teaching period begins</td>
+                                                                        <td>Monday 8 March</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="first__td">11 teaching period ends</td>
+                                                                        <td>Friday 28 May</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="first__td">Exams Begin</td>
+                                                                        <td>Monday 7 June</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="first__td">Exams End</td>
+                                                                        <td>Friday 18 June</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="first__td">11 results released</td>
+                                                                        <td>Thursday 8 July</td>
+                                                                    </tr>
+                                                                    <!-- end looping -->
+
+                                                                    <!-- check jika key actives, application open, else if application close, else coming soon  -->
+                                                                    <tr>
+                                                                        <td class="bg-light" colspan="2">Applications now open </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tableApplication my-5">
+                                    <div class="app__content">
+                                        <div class="container">
+                                            <div class="row align-items-center p-0">
+                                                <div class="col">
+                                                    <div class="app__table">
+                                                        <div class="table__app">
+                                                            <p>Trimester 3, 2021</p>
+                                                        </div>
+                                                        <div class="table-responsive">
+                                                            <table class="table text-center">
+                                                                <thead>
+                                                                    <!-- <tr>
+                                                                        <th scope="col"></th>
+                                                                        <th scope="col"></th>
+                                                                    </tr> -->
+                                                                </thead>
+                                                                <tbody>
+                                                                    <!-- looping data from db -->
+                                                                    <!-- end looping -->
+
+                                                                    <!-- check jika key actives, application open, else if application close, else coming soon  -->
+                                                                    <tr>
+                                                                        <td class="bg-light" colspan="2">Coming Soon</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end looping -->
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
     </main>
 
-    <!-- berita lainnya -->
-    <main class="beritaLainnya">
-        <div class="container">
-            <div class="beritaLainnya__header">
-                <h5>Berita Lainnya</h5>
-            </div>
-            <div class="container-fluid beritaLainnya__body">
-                <div class="card">
-                    <div class="row row-cols-md-2 align-items-center">
-                    <div class="col-md-5">
-                        <div class="beritaLainnya__boxImg">
-                        <img src="./../../assets/images/Mask Group 10.png" />
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="beritaLainnya__content">
-                        <h3>
-                            The Importance of Implementing Social Distancing to
-                            Prevent COVID-19
-                        </h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Saepe et blanditiis quia earum alias quisquam,
-                            molestias totam consectetur illo similique aliquam
-                            quidem illum consequatur nobis repudiandae sapiente,
-                            fuga veritatis. Minima.
-                        </p>
-                        <a href="#">Read More...</a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="row row-cols-md-2 align-items-center">
-                    <div class="col-md-5">
-                        <div class="beritaLainnya__boxImg">
-                        <img src="./../../assets/images/Mask Group 11.png" />
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="beritaLainnya__content">
-                        <h3>
-                            The Importance of Implementing Social Distancing to
-                            Prevent COVID-19
-                        </h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Saepe et blanditiis quia earum alias quisquam,
-                            molestias totam consectetur illo similique aliquam
-                            quidem illum consequatur nobis repudiandae sapiente,
-                            fuga veritatis. Minima.
-                        </p>
-                        <a href="#">Read More...</a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="row row-cols-md-2 align-items-center">
-                    <div class="col-md-5">
-                        <div class="beritaLainnya__boxImg">
-                        <img src="./../../assets/images/Mask Group 11.png" />
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="beritaLainnya__content">
-                        <h3>
-                            The Importance of Implementing Social Distancing to
-                            Prevent COVID-19
-                        </h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Saepe et blanditiis quia earum alias quisquam,
-                            molestias totam consectetur illo similique aliquam
-                            quidem illum consequatur nobis repudiandae sapiente,
-                            fuga veritatis. Minima.
-                        </p>
-                        <a href="#">Read More...</a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-     <!-- latest event -->
-     <div class="container-fluid my-5 latestNews p-4">
+    <!-- latest event -->
+    <div class="container-fluid my-5 latestNews p-4">
         <div class="latestNews__header mb-3">
             <h4>Latest Event</h4>
         </div>
@@ -527,8 +614,6 @@
         </div>
     </div>
 
-    <!-- end dinamis -->
-
     <!-- thumbnail -->
     <div class="gundarGraduates__join">
         <div class="join__container">
@@ -548,7 +633,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- contact gunadarma -->
     <div class="contact__gunadarma">
@@ -641,20 +725,6 @@
 
     <script type="module" src="./../../assets/scripts/main.js"></script>
     <!-- <script src="./../../assets/scripts/course.js"></script> -->
-    
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiperNews = new Swiper('.swiperNews', {
-        spaceBetween: 30,
-        pagination: {
-            el: '.swiper-pagination',
-            dynamicBullets: true,
-            },
-        });
-    </script>
 </body>
 
 </html>

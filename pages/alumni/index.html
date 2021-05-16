@@ -369,7 +369,7 @@
                 </div>
                 <div class="alumni__carouselContext mb-5">
                     <div class="container">
-                        <div class="swiper-container">
+                        <div class="swiper-container swiperAlumni">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="card">
@@ -483,7 +483,7 @@
         
             <div class="alumni__testimonialContents">
                 <div class="alumni__testimonialSlider">
-                    <div class="swiper-container-2">
+                    <div class="swiper-container swiperTestimonial">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                         <div class="card">
@@ -639,14 +639,14 @@
 
     <!-- Initialize Swiper -->
     <script>
-        const swiper = new Swiper('.swiper-container', {
+        const swiperAlumni = new Swiper('.swiperAlumni', {
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
         });
 
-        const swiper2 = new Swiper('.swiper-container-2', {
+        const swiperTestimonial = new Swiper('.swiperTestimonial', {
         effect: 'fade',
         slidesPerView: 'auto',
         autoplay: {
