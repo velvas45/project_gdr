@@ -985,6 +985,10 @@ header .sidebar .sidebar__left .sidebar__menu .accordion-item:nth-child(6) .acco
   background: none;
 }
 
+header .sidebar .sidebar__left .sidebar__menu .accordion-item .login:after {
+  background: none;
+}
+
 header .sidebar .sidebar__left .sidebar__menu .accordion-item .accordion-body {
   padding: 1rem 0 0 0.8rem;
 }
