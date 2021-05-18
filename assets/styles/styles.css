@@ -923,6 +923,34 @@ header .sidebar .sidebar__left {
   padding: 30px 0 20px 8px;
 }
 
+header .sidebar .sidebar__left .btn-login > a {
+  color: #885A89;
+  font-size: 1em;
+}
+
+header .sidebar .sidebar__left .box__afterLogin .boxAvatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+header .sidebar .sidebar__left .box__afterLogin .boxAvatar img {
+  height: 100%;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center right;
+     object-position: center right;
+}
+
+header .sidebar .sidebar__left .box__afterLogin .profile__name {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
 header .sidebar .sidebar__left .sidebar__closeBtn {
   position: absolute;
   top: 15px;
@@ -951,7 +979,9 @@ header .sidebar .sidebar__left .sidebar__menu .accordion-item a {
   text-decoration: none;
 }
 
-header .sidebar .sidebar__left .sidebar__menu .accordion-item:nth-child(2) .accordion-button:after, header .sidebar .sidebar__left .sidebar__menu .accordion-item:nth-child(5) .accordion-button:after, header .sidebar .sidebar__left .sidebar__menu .accordion-item:nth-child(6) .accordion-button:after {
+header .sidebar .sidebar__left .sidebar__menu .accordion-item:nth-child(2) .accordion-button:after,
+header .sidebar .sidebar__left .sidebar__menu .accordion-item:nth-child(5) .accordion-button:after,
+header .sidebar .sidebar__left .sidebar__menu .accordion-item:nth-child(6) .accordion-button:after {
   background: none;
 }
 
@@ -989,7 +1019,7 @@ header .sidebar .sidebar__left .sidebar__menu .accordion-item .accordion__child-
 }
 
 header .sidebar .sidebar__left .sidebar__menu .accordion-item .accordion__child-menu .accordion-button.collapsed:hover, header .sidebar .sidebar__left .sidebar__menu .accordion-item .accordion__child-menu .accordion-button.collapsed:active {
-  border-left: 5px solid #EF7B39;
+  border-left: 5px solid #ef7b39;
   border-radius: 0;
 }
 
@@ -1021,7 +1051,9 @@ header .sidebar .sidebar__left .sidebar__menu .accordion-item .accordion__child-
   text-decoration: none;
 }
 
-header .sidebar .sidebar__left .sidebar__menu .accordion-item .accordion__child-menu .accordion-item:nth-child(3) .accordion-button:after, header .sidebar .sidebar__left .sidebar__menu .accordion-item .accordion__child-menu .accordion-item:nth-child(4) .accordion-button:after, header .sidebar .sidebar__left .sidebar__menu .accordion-item .accordion__child-menu .accordion-item:nth-child(5) .accordion-button:after {
+header .sidebar .sidebar__left .sidebar__menu .accordion-item .accordion__child-menu .accordion-item:nth-child(3) .accordion-button:after,
+header .sidebar .sidebar__left .sidebar__menu .accordion-item .accordion__child-menu .accordion-item:nth-child(4) .accordion-button:after,
+header .sidebar .sidebar__left .sidebar__menu .accordion-item .accordion__child-menu .accordion-item:nth-child(5) .accordion-button:after {
   background: none;
 }
 
@@ -1127,7 +1159,7 @@ header .sidebar .sidebar__right {
   }
   header .sidebar .sidebar__left .sidebar__menu .accordion__child-menu .accordion-button:not(.collapsed) {
     background: transparent;
-    border-left: 5px solid #EF7B39;
+    border-left: 5px solid #ef7b39;
     border-radius: 0;
   }
   header .sidebar .sidebar__left .sidebar__menu .accordion__child-menu .accordion-button {
@@ -1137,7 +1169,7 @@ header .sidebar .sidebar__right {
     font-size: 12px;
   }
   header .sidebar .sidebar__left .sidebar__menu .accordion__child-menu ul li:hover, header .sidebar .sidebar__left .sidebar__menu .accordion__child-menu ul li:active {
-    background: #EF7B39;
+    background: #ef7b39;
   }
   header .sidebar .sidebar__left .sidebar__menu .accordion__child-menu ul li:hover a, header .sidebar .sidebar__left .sidebar__menu .accordion__child-menu ul li:active a {
     color: #fff;
